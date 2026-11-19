@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.chat.planeador.ReglasReservaTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-11-19T21:08:42.514Z" hostname="441124594dd1" time="0.204">
+  <properties/>
+  <testcase name="alConfirmarNoPresentaComoActualesLosCuposAnteriores()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.004"/>
+  <testcase name="condicionDesconocidaJuntoAlPresupuestoNoSeDaPorCumplida()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.002"/>
+  <testcase name="preguntaDeDisponibilidadNoAutorizaUnaReserva()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.003"/>
+  <testcase name="seleccionaLosAgentesDeLasSeisPreguntas()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.003"/>
+  <testcase name="presupuestoYClimaAdecuadosPermitenLaReservaRealEnMemoria()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.002"/>
+  <testcase name="llamadasRepetidasEnUnaPeticionNoDescuentanDosVeces()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.002"/>
+  <testcase name="springInyectaElContextoFueraDelEsquemaQueVeElModelo()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.155"/>
+  <testcase name="climaPorEncimaDelUmbralBloqueaLaReserva()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.001"/>
+  <testcase name="formatosDePesosConSeparadoresSeReconocen()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.001"/>
+  <testcase name="sinContextoOriginalLaToolNoPuedeCrearReservas()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.002"/>
+  <testcase name="presupuestoInsuficienteBloqueaAunqueElModeloIntenteReservar()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.003"/>
+  <testcase name="argumentosDelModeloDebenCoincidirConLaSolicitudOriginal()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.001"/>
+  <testcase name="faltaDePresupuestoNoSeInterpretaComoCondicionCumplida()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

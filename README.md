@@ -1,5 +1,8 @@
 # Chat con documentos usando RAG (Spring AI + PGVector)
 
+> **Rama `taller-agentes`:** el chat usa el planeador multiagente descrito al final de este README.
+> El código RAG del taller anterior se conserva; su servicio ya no es la implementación predeterminada.
+
 Taller del curso **Aplicaciones basadas en grandes modelos de lenguaje** (Módulo 2: RAG), Universidad El Bosque.
 Partimos del proyecto base `pruebachat` (Spring Boot + Spring AI + Ollama + frontend web, todo con Docker Compose) y le agregamos RAG: ahora el usuario sube un documento desde el navegador y el chat responde con base en su contenido.
 
@@ -274,3 +277,112 @@ Ejemplo de la respuesta JSON:
 ### Mejora propuesta: bajar la temperatura del modelo
 
 Una mejora que podría prevenir que suceda la situación de que el modelo inventa o dice información imprecisa como en el caso de la pregunta 1, es bajar la temperatura de las configuraciones, la temperatura controla el grado de libertad que tiene el modelo para responder. Al estar en un numero alto, el modelo es más propenso a inventar la información. Teniendo en cuenta que se está implementando RAG, se debería bajar a la temperatura del modelo ya que lo que se busca es un asistente que responda únicamente con base en los documentos que se le proporcionen, la creatividad no aporta mucho al proceso, por el contrario, la fidelidad a la información tiene un gran valor.
+
+
+## Taller de agentes: estado de la Parte 4
+
+El chat en `http://localhost:4200` llama al mismo `POST /api/v1/chat`, pero ahora
+Spring inyecta `AgentesModelService` mediante `@Primary`.
+
+Flujo: pregunta → supervisor → especialista → supervisor → sintetizador → respuesta.
+Los especialistas son CLIMA, PRESUPUESTO y RESERVAS. Se ejecutan como máximo tres,
+sin repetir uno en la misma petición. El supervisor devuelve el record `Decision`
+mediante salida estructurada nativa de Ollama. Los resultados y agentes consultados
+son variables locales de cada petición; todavía no hay memoria conversacional del planeador.
+
+```bash
+docker compose -f docker/docker-compose.yml up -d --build
+docker logs -f pruebachat_backend
+```
+
+Se usa `qwen2.5:3b`, temperatura 0 y tiempos de espera de 300 segundos.
+El sintetizador tiene un límite de 192 tokens de salida. PostgreSQL queda accesible
+por la red interna de Docker para evitar conflictos con otros proyectos en el puerto 5432.
+
+Prueba desde el chat: «¿Cómo estará el clima en Guatavita el domingo?».
+Las rutas de depuración de la Parte 3 siguen disponibles en
+`GET /api/v1/debug/clima?q=...`, `/presupuesto?q=...` y `/reservas?q=...`.
+La de reservas puede modificar los datos simulados en memoria.
+
+### Pruebas del planeador
+
+Con Java 21 y Gradle, desde `backend/`:
+
+```bash
+gradle -I gradle/planeador-tests.gradle cleanTest test
+```
+
+El script selecciona las pruebas del planeador y su modelo simulado. El comando general
+`gradle test` sigue bloqueado por tests anteriores del chat que no fueron adaptados al
+constructor RAG con `VectorStore`. Los resultados y las trazas están en `docs/resultados-parte5-corregida-final.md`
+y `docs/trazas/`. La bitácora académica se entrega por separado, fuera de este repositorio.
+
+### Diferencias deliberadas respecto al ejemplo del PDF
+
+- `ModelService` devuelve `ModelResult` y recibe cuatro argumentos en este repositorio;
+  la nueva implementación conserva ese contrato, sin modificar `ChatController`.
+- La tool `calcularSaldo` recibe destino, personas y presupuesto y obtiene el costo en Java,
+  evitando que el modelo invente el costo intermedio. Se conserva el cálculo puro original.
+- Las reservas validan cantidades positivas y comprueban y descuentan cupos con el mismo candado.
+- La orquestación conserva resultados disponibles si falla un especialista o el sintetizador.
+- El planeador usa sus prompts y opciones fijos; aún no aplica plantillas ni ajustes por petición
+  del chat anterior. `sessionId` se registra, pero no se usa para recordar mensajes.
+- Las métricas de tokens del conjunto de agentes aún no se agregan: se devuelven como no disponibles;
+  el tiempo total de la petición sí se conserva. No se presentan métricas de una sola llamada como totales.
+
+
+### Correcciones después de las pruebas de la Parte 5
+
+- `SolicitudPlaneador` reconoce las intenciones y cifras explícitas del vocabulario del taller.
+  El supervisor LLM sigue proponiendo el siguiente agente, pero Java valida la pertinencia,
+  corrige selecciones repetidas o ajenas a la pregunta y deja reservas para después de las condiciones.
+  Las preguntas fuera del dominio reciben una respuesta de alcance sin ejecutar especialistas.
+- `RegistroHerramientas` se crea por petición y viaja en `ToolContext`, fuera del esquema de argumentos
+  que ve el modelo. Conserva la pregunta original, los resultados de las tools y la reserva confirmada.
+- `ReglasReserva` compara los argumentos con la solicitud original y consulta precios y pronósticos Java
+  antes de descontar cupos. Rechaza contexto ausente, datos incompletos, montos insuficientes,
+  condiciones desconocidas y argumentos que no coinciden con lo solicitado.
+- Política explícita para datos ficticios: «no llueve mucho» permite hasta 40 % de probabilidad de lluvia;
+  «no llueve» exige 0 %. Es una regla del ejercicio, no un pronóstico ni una garantía meteorológica.
+- Si una llamada de reserva se repite en la misma petición tras confirmar, se devuelve el mismo código
+  y no se descuentan cupos dos veces. Esto no proporciona idempotencia entre peticiones distintas.
+- El sintetizador recibe solo la evidencia de herramientas. Si la reformulación omite o cambia contenido,
+  el backend devuelve los textos verificados íntegros. Se prioriza fidelidad sobre libertad de redacción.
+- Los especialistas tienen un límite de salida de 256 tokens por llamada; el supervisor, 96; el sintetizador, 192.
+
+Las reglas de extracción son conservadoras y están orientadas a frases y números explícitos del taller;
+no sustituyen una comprensión general del español. Las solicitudes ambiguas o las condiciones no
+reconocidas requieren aclaración. No hay memoria entre mensajes del planeador.
+La batería aislada contiene 34 pruebas: herramientas, orquestación y regresiones de reservas.
+Las respuestas iniciales con errores permanecen en `docs/pruebas-parte5-inicial.json` y sus trazas;
+la segunda ejecución completa se registra por separado en `docs/pruebas-parte5-corregida-final.json`.
+
+
+## Parte 7: reto de un nuevo especialista de actividades
+
+Se añadió `ActividadesTools.recomendarActividades(destino)` con un catálogo ficticio para los cinco
+destinos. La tool normaliza nombres y alias mediante DatosPlaneador y registra sus resultados en
+ToolContext para conservar la evidencia. Las recomendaciones se identifican como simuladas y no
+asignan precios adicionales: el costo del grupo sigue siendo el plan base de transporte, entrada y comida.
+
+`AgentesConfig` crea `agenteActividades`, `Decision.Agente` incorpora `ACTIVIDADES` y
+`SolicitudPlaneador` reconoce preguntas sobre actividades o «qué puedo/podemos hacer».
+El orquestador registra el nuevo especialista. El límite del reto pasa de tres a **cuatro** especialistas
+por pregunta, sin repetirlos y dejando reservas al final. La comparación de la Parte 6 conserva la
+medición anterior al reto; no se recalcularon sus tiempos con esta nueva funcionalidad.
+
+Ejemplo para el chat:
+
+> Somos 2 y queremos ir a Suesca. ¿Qué actividades podemos hacer y cuánto nos cuesta?
+
+La consulta debe pasar por PRESUPUESTO y ACTIVIDADES. Resultado esperado: costo base $140.000
+y catálogo simulado de Suesca, sin consultar clima ni crear reservas.
+También se puede probar el especialista por separado con `GET /api/v1/debug/actividades?q=...`.
+
+La batería aislada del planeador contiene ahora **43 pruebas**, con cero fallos en la ejecución del reto:
+7 de actividades, 11 de herramientas, 12 de orquestación y 13 de reglas de reserva.
+Se ejecuta desde `backend/` con `gradle -I gradle/planeador-tests.gradle cleanTest test`.
+El conteo no incluye los tests heredados del chat RAG que aún no compilan.
+
+Respuestas y tiempos reales del reto: `docs/pruebas-reto-actividades.json`.
+Trazas: `docs/trazas/reto-actividades/`.

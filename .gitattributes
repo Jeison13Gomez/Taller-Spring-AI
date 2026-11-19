@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Conservar el formato original de las trazas y reportes de pruebas.
+docs/trazas/** -whitespace

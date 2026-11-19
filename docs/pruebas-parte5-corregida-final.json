@@ -1,0 +1,206 @@
+{
+  "fecha": "2026-11-19T19:13:36.921296+00:00",
+  "modelo": "qwen2.5:3b",
+  "ejecucion": "corregida-final",
+  "pruebas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Cómo estará el clima en Guatavita el domingo?",
+      "esperado": "CLIMA; lluvioso, 7–15 °C, 80 % de lluvia.",
+      "inicioUtc": "2026-11-19T19:13:36.921673+00:00",
+      "httpStatus": 200,
+      "respuesta": {
+        "requestId": "f552e81d-141e-4af9-b473-48d30e77251a",
+        "answer": "Laguna de Guatavita el domingo: lluvioso, entre 7 °C y 15 °C, probabilidad de lluvia 80 %.",
+        "elapsedMs": 33191,
+        "status": "ok",
+        "usage": null,
+        "historyMessages": 0,
+        "sources": []
+      },
+      "tiempoSegundos": 33.405,
+      "decisionesSupervisor": [
+        "CLIMA"
+      ],
+      "especialistasEjecutados": [
+        "CLIMA"
+      ],
+      "toolsEjecutadas": [
+        "consultarPronostico"
+      ],
+      "traza": "trazas/parte5-corregida-final/pregunta-1.log",
+      "correccionesSupervisor": [],
+      "evaluacion": "Correcta"
+    },
+    {
+      "numero": 2,
+      "pregunta": "Somos 4 amigos con 350000 pesos. ¿Nos alcanza para ir a Zipaquirá?",
+      "esperado": "PRESUPUESTO; costo $400.000, faltan $50.000.",
+      "inicioUtc": "2026-11-19T19:14:10.477018+00:00",
+      "httpStatus": 200,
+      "respuesta": {
+        "requestId": "d2e0341d-c7f8-43d4-9e64-a51ebc4cf692",
+        "answer": "Catedral de Sal de Zipaquirá: por persona transporte $20.000 + entrada $50.000 + alimentación $30.000 = $100.000. Costo total para 4 personas: $400.000.\nNo alcanza: presupuesto $350.000 - costo $400.000 = faltan $50.000.",
+        "elapsedMs": 64765,
+        "status": "ok",
+        "usage": null,
+        "historyMessages": 0,
+        "sources": []
+      },
+      "tiempoSegundos": 64.795,
+      "decisionesSupervisor": [
+        "RESERVAS"
+      ],
+      "especialistasEjecutados": [
+        "PRESUPUESTO"
+      ],
+      "toolsEjecutadas": [
+        "estimarCosto",
+        "calcularSaldo"
+      ],
+      "traza": "trazas/parte5-corregida-final/pregunta-2.log",
+      "correccionesSupervisor": [
+        [
+          "RESERVAS",
+          "PRESUPUESTO"
+        ]
+      ],
+      "evaluacion": "Correcta"
+    },
+    {
+      "numero": 3,
+      "pregunta": "Somos 2 y queremos ir a Villa de Leyva el sábado. ¿Cómo estará el clima y cuánto nos cuesta?",
+      "esperado": "CLIMA y PRESUPUESTO; soleado, 5 % de lluvia, costo $230.000.",
+      "inicioUtc": "2026-11-19T19:15:15.467941+00:00",
+      "httpStatus": 200,
+      "respuesta": {
+        "requestId": "bae1bee7-7b25-4d88-bb8b-73d3aa23dfcf",
+        "answer": "Villa de Leyva: por persona transporte $70.000 + entrada $0 + alimentación $45.000 = $115.000. Costo total para 2 personas: $230.000.\nVilla de Leyva el sabado: soleado, entre 12 °C y 25 °C, probabilidad de lluvia 5 %.",
+        "elapsedMs": 63156,
+        "status": "ok",
+        "usage": null,
+        "historyMessages": 0,
+        "sources": []
+      },
+      "tiempoSegundos": 63.193,
+      "decisionesSupervisor": [
+        "PRESUPUESTO",
+        "CLIMA"
+      ],
+      "especialistasEjecutados": [
+        "PRESUPUESTO",
+        "CLIMA"
+      ],
+      "toolsEjecutadas": [
+        "estimarCosto",
+        "consultarPronostico"
+      ],
+      "traza": "trazas/parte5-corregida-final/pregunta-3.log",
+      "correccionesSupervisor": [],
+      "evaluacion": "Correcta"
+    },
+    {
+      "numero": 4,
+      "pregunta": "Somos 3 y tenemos 250000. Si no llueve mucho y nos alcanza, reserva Suesca para el sábado a nombre de Laura.",
+      "esperado": "CLIMA, PRESUPUESTO y RESERVAS; lluvia 15 %, costo $210.000, sobran $40.000; reserva para 3, sábado, Laura.",
+      "inicioUtc": "2026-11-19T19:16:18.870620+00:00",
+      "httpStatus": 200,
+      "respuesta": {
+        "requestId": "bef35172-a4fe-4acf-91ae-1984d02b520d",
+        "answer": "Rocas de Suesca: por persona transporte $25.000 + entrada $15.000 + alimentación $30.000 = $70.000. Costo total para 3 personas: $210.000.\nSí alcanza: presupuesto $250.000 - costo $210.000 = sobran $40.000.\nRocas de Suesca el sabado: soleado, entre 7 °C y 21 °C, probabilidad de lluvia 15 %.\nReserva confirmada RES-001: Rocas de Suesca, sabado, 3 personas, a nombre de Laura.",
+        "elapsedMs": 173565,
+        "status": "ok",
+        "usage": null,
+        "historyMessages": 0,
+        "sources": []
+      },
+      "tiempoSegundos": 173.601,
+      "decisionesSupervisor": [
+        "PRESUPUESTO",
+        "CLIMA",
+        "RESERVAS"
+      ],
+      "especialistasEjecutados": [
+        "PRESUPUESTO",
+        "CLIMA",
+        "RESERVAS"
+      ],
+      "toolsEjecutadas": [
+        "estimarCosto",
+        "calcularSaldo",
+        "consultarPronostico",
+        "consultarDisponibilidad",
+        "crearReserva"
+      ],
+      "traza": "trazas/parte5-corregida-final/pregunta-4.log",
+      "correccionesSupervisor": [],
+      "evaluacion": "Correcta"
+    },
+    {
+      "numero": 5,
+      "pregunta": "Somos 3 con 150000. Si nos alcanza, reserva Suesca el domingo a nombre de Laura.",
+      "esperado": "PRESUPUESTO (RESERVAS opcional); faltan $60.000; NO crear reserva.",
+      "inicioUtc": "2026-11-19T19:19:12.678494+00:00",
+      "httpStatus": 200,
+      "respuesta": {
+        "requestId": "c74abdec-7f6c-4995-b6b3-1c0f10dc7c82",
+        "answer": "Rocas de Suesca: por persona transporte $25.000 + entrada $15.000 + alimentación $30.000 = $70.000. Costo total para 3 personas: $210.000.\nNo alcanza: presupuesto $150.000 - costo $210.000 = faltan $60.000.\nRocas de Suesca el domingo: quedan 6 cupos.\nNo se creó una reserva: costo total $210.000, presupuesto $150.000; faltan $60.000.",
+        "elapsedMs": 78379,
+        "status": "ok",
+        "usage": null,
+        "historyMessages": 0,
+        "sources": []
+      },
+      "tiempoSegundos": 78.434,
+      "decisionesSupervisor": [
+        "PRESUPUESTO",
+        "RESERVAS"
+      ],
+      "especialistasEjecutados": [
+        "PRESUPUESTO",
+        "RESERVAS"
+      ],
+      "toolsEjecutadas": [
+        "estimarCosto",
+        "calcularSaldo",
+        "consultarDisponibilidad",
+        "crearReserva"
+      ],
+      "traza": "trazas/parte5-corregida-final/pregunta-5.log",
+      "correccionesSupervisor": [],
+      "evaluacion": "Correcta"
+    },
+    {
+      "numero": 6,
+      "pregunta": "¿Quién ganó el mundial de 2022?",
+      "esperado": "Ningún especialista; explicar el alcance del planeador sin responder la pregunta deportiva.",
+      "inicioUtc": "2026-11-19T19:20:31.262040+00:00",
+      "httpStatus": 200,
+      "respuesta": {
+        "requestId": "d7ba7e19-240a-4149-ba70-5f2610eb86bb",
+        "answer": "Puedo ayudarte con clima, presupuesto y reservas para Guatavita, Zipaquirá, Villa de Leyva, Suesca y Chicaque.",
+        "elapsedMs": 1,
+        "status": "ok",
+        "usage": null,
+        "historyMessages": 0,
+        "sources": []
+      },
+      "tiempoSegundos": 0.014,
+      "decisionesSupervisor": [],
+      "especialistasEjecutados": [],
+      "toolsEjecutadas": [],
+      "traza": "trazas/parte5-corregida-final/pregunta-6.log",
+      "correccionesSupervisor": [],
+      "evaluacion": "Correcta"
+    }
+  ],
+  "resumen": {
+    "correctas": 6,
+    "parciales": 0,
+    "incorrectas": 0,
+    "tiempoPromedioSegundos": 68.907,
+    "pruebasUnitarias": 34,
+    "reservaPermitida": "RES-001: Suesca, sábado, 3 personas, Laura",
+    "reservaInsuficiente": "Rechazada por Java; faltan $60.000"
+  }
+}

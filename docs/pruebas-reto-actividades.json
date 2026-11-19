@@ -1,0 +1,115 @@
+{
+  "etapa": 7,
+  "reto": "Nuevo especialista: actividades",
+  "modelo": "qwen2.5:3b",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Qué actividades podemos hacer en Suesca?",
+      "esperado": "ACTIVIDADES: senderismo, observación de formaciones rocosas y fotografía del paisaje; catálogo simulado.",
+      "inicioUtc": "2026-11-19T21:07:45.602196+00:00",
+      "httpStatus": 200,
+      "respuesta": {
+        "requestId": "f3e816f7-5170-4ab7-a674-2ec088617172",
+        "answer": "Rocas de Suesca. Actividades simuladas: senderismo; observación de formaciones rocosas; fotografía del paisaje.",
+        "elapsedMs": 74874,
+        "status": "ok",
+        "usage": null,
+        "historyMessages": 0,
+        "sources": []
+      },
+      "tiempoSegundos": 75.232,
+      "traza": "trazas/reto-actividades/pregunta-1.log",
+      "decisionesSupervisor": [
+        "ACTIVIDADES"
+      ],
+      "especialistasEjecutados": [
+        "ACTIVIDADES"
+      ],
+      "toolsEjecutadas": [
+        "recomendarActividades"
+      ],
+      "correccionesSupervisor": [],
+      "evaluacion": "Correcta"
+    },
+    {
+      "numero": 2,
+      "pregunta": "Somos 2 y queremos ir a Suesca. ¿Qué actividades podemos hacer y cuánto nos cuesta?",
+      "esperado": "PRESUPUESTO y ACTIVIDADES: costo $140.000 y catálogo simulado de Suesca.",
+      "inicioUtc": "2026-11-19T21:09:01.005972+00:00",
+      "httpStatus": 200,
+      "respuesta": {
+        "requestId": "2c0e27bf-c962-49f1-afe4-94c0566280e9",
+        "answer": "Rocas de Suesca. Actividades simuladas: senderismo; observación de formaciones rocosas; fotografía del paisaje.\nRocas de Suesca: por persona transporte $25.000 + entrada $15.000 + alimentación $30.000 = $70.000. Costo total para 2 personas: $140.000.",
+        "elapsedMs": 57875,
+        "status": "ok",
+        "usage": null,
+        "historyMessages": 0,
+        "sources": []
+      },
+      "tiempoSegundos": 57.91,
+      "traza": "trazas/reto-actividades/pregunta-2.log",
+      "decisionesSupervisor": [
+        "ACTIVIDADES",
+        "PRESUPUESTO"
+      ],
+      "especialistasEjecutados": [
+        "ACTIVIDADES",
+        "PRESUPUESTO"
+      ],
+      "toolsEjecutadas": [
+        "recomendarActividades",
+        "estimarCosto"
+      ],
+      "correccionesSupervisor": [],
+      "evaluacion": "Correcta"
+    },
+    {
+      "numero": 3,
+      "pregunta": "Somos 3 con 150000. Si nos alcanza, reserva Suesca el domingo a nombre de Laura.",
+      "esperado": "PRESUPUESTO, opcionalmente RESERVAS; faltan $60.000 y no se crea reserva.",
+      "inicioUtc": "2026-11-19T21:09:59.056470+00:00",
+      "httpStatus": 200,
+      "respuesta": {
+        "requestId": "edda69b3-adc1-4558-a843-84f4175c4e8f",
+        "answer": "Rocas de Suesca: por persona transporte $25.000 + entrada $15.000 + alimentación $30.000 = $70.000. Costo total para 3 personas: $210.000.\nNo alcanza: presupuesto $150.000 - costo $210.000 = faltan $60.000.\nRocas de Suesca el domingo: quedan 6 cupos.\nNo se creó una reserva: costo total $210.000, presupuesto $150.000; faltan $60.000.",
+        "elapsedMs": 78221,
+        "status": "ok",
+        "usage": null,
+        "historyMessages": 0,
+        "sources": []
+      },
+      "tiempoSegundos": 78.243,
+      "traza": "trazas/reto-actividades/pregunta-3.log",
+      "decisionesSupervisor": [
+        "RESERVAS",
+        "RESERVAS"
+      ],
+      "especialistasEjecutados": [
+        "PRESUPUESTO",
+        "RESERVAS"
+      ],
+      "toolsEjecutadas": [
+        "estimarCosto",
+        "calcularSaldo",
+        "consultarDisponibilidad",
+        "crearReserva"
+      ],
+      "correccionesSupervisor": [
+        [
+          "RESERVAS",
+          "PRESUPUESTO"
+        ]
+      ],
+      "evaluacion": "Correcta"
+    }
+  ],
+  "resumen": {
+    "consultasRealesCorrectas": 3,
+    "consultasRealesTotales": 3,
+    "pruebasUnitarias": 43,
+    "maximoEspecialistasPorPregunta": 4,
+    "catalogo": "simulado",
+    "costoBaseDosPersonasSuesca": 140000
+  }
+}
