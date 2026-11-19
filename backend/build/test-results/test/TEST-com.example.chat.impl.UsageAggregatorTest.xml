@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.chat.impl.UsageAggregatorTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-28T20:58:31.724Z" hostname="ALEJIWIRIKS" time="0.006">
+  <properties/>
+  <testcase name="severalAttemptsSumTokensAndGenerationTime()" classname="com.example.chat.impl.UsageAggregatorTest" time="0.0"/>
+  <testcase name="aMissingCompletionCountMakesCompletionTotalAndSpeedNotAvailable()" classname="com.example.chat.impl.UsageAggregatorTest" time="0.0"/>
+  <testcase name="blankModelOrFinishReasonIsNotAvailable()" classname="com.example.chat.impl.UsageAggregatorTest" time="0.0"/>
+  <testcase name="aTokenFigureMissingInAnyAttemptIsNotAvailableNeverAPartialSum()" classname="com.example.chat.impl.UsageAggregatorTest" time="0.001"/>
+  <testcase name="tokensPerSecondIsRoundedToTwoDecimals()" classname="com.example.chat.impl.UsageAggregatorTest" time="0.0"/>
+  <testcase name="modelAndFinishReasonComeFromTheLastAttempt()" classname="com.example.chat.impl.UsageAggregatorTest" time="0.0"/>
+  <testcase name="aMissingOrZeroGenerationTimeInAnyAttemptMakesSpeedNotAvailable()" classname="com.example.chat.impl.UsageAggregatorTest" time="0.001"/>
+  <testcase name="oneAttemptGivesTheSameValuesAsTheSingleResponseMetrics()" classname="com.example.chat.impl.UsageAggregatorTest" time="0.0"/>
+  <testcase name="noAttemptsGivesAnAllNullMetrics()" classname="com.example.chat.impl.UsageAggregatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

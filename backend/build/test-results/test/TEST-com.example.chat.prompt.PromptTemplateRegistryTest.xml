@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.chat.prompt.PromptTemplateRegistryTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-28T20:58:31.954Z" hostname="ALEJIWIRIKS" time="0.167">
+  <properties/>
+  <testcase name="startupFailsWhenThereIsNoDefaultTemplate()" classname="com.example.chat.prompt.PromptTemplateRegistryTest" time="0.023"/>
+  <testcase name="startupFailsNamingTheTemplateAndTheVariableThatHasNoValue()" classname="com.example.chat.prompt.PromptTemplateRegistryTest" time="0.008"/>
+  <testcase name="aTemplateWithAJsonExampleAndValidVariablesLoads()" classname="com.example.chat.prompt.PromptTemplateRegistryTest" time="0.009"/>
+  <testcase name="extractorKeepsItsJsonBracesLiteral()" classname="com.example.chat.prompt.PromptTemplateRegistryTest" time="0.005"/>
+  <testcase name="registeredIdsAreTheFourTemplatesSorted()" classname="com.example.chat.prompt.PromptTemplateRegistryTest" time="0.005"/>
+  <testcase name="defaultTemplateIsTheOriginalSystemPromptWordForWord()" classname="com.example.chat.prompt.PromptTemplateRegistryTest" time="0.005"/>
+  <testcase name="startupFailsNamingAnIdThatIsDefinedByTwoFiles()" classname="com.example.chat.prompt.PromptTemplateRegistryTest" time="0.015"/>
+  <testcase name="variablesAreReplacedAndNoPlaceholderIsLeft()" classname="com.example.chat.prompt.PromptTemplateRegistryTest" time="0.004"/>
+  <testcase name="extraVariablesAreHarmlessForATemplateThatDoesNotUseThem()" classname="com.example.chat.prompt.PromptTemplateRegistryTest" time="0.01"/>
+  <testcase name="abbreviateKeepsShortIdsAndCutsLongOnesAt40Characters()" classname="com.example.chat.prompt.PromptTemplateRegistryTest" time="0.004"/>
+  <testcase name="startupFailsNamingAnIdThatIsNotLowercaseLettersDigitsAndHyphens()" classname="com.example.chat.prompt.PromptTemplateRegistryTest" time="0.009"/>
+  <testcase name="startupFailsNamingTheTemplateThatHasALoneAngleBracket()" classname="com.example.chat.prompt.PromptTemplateRegistryTest" time="0.008"/>
+  <testcase name="unknownIdIsNotRegisteredAndCannotBeRendered()" classname="com.example.chat.prompt.PromptTemplateRegistryTest" time="0.005"/>
+  <testcase name="startupFailsForAnIdWithSpaces()" classname="com.example.chat.prompt.PromptTemplateRegistryTest" time="0.01"/>
+  <system-out><![CDATA[15:58:32.095 [Test worker] ERROR org.springframework.ai.template.st.StTemplateRenderer -- 1:18: mismatched input '.' expecting COLON
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

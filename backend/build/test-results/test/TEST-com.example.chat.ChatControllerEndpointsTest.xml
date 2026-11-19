@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.chat.ChatControllerEndpointsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-28T20:58:28.900Z" hostname="ALEJIWIRIKS" time="0.206">
+  <properties/>
+  <testcase name="theApiExposesExactlyTheKnownRoutes()" classname="com.example.chat.ChatControllerEndpointsTest" time="0.137"/>
+  <testcase name="noRouteMentionsSessionsHistoryOrMemory()" classname="com.example.chat.ChatControllerEndpointsTest" time="0.036"/>
+  <testcase name="theChatPathOnlyAcceptsPost()" classname="com.example.chat.ChatControllerEndpointsTest" time="0.03"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

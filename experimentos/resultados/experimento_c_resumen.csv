@@ -1,0 +1,5 @@
+﻿"numPredict","ejecuciones_validas","finishReason","completionTokens_media","elapsedMs_media","terminan_en_puntuacion"
+"10","3","length x3","10","1053.33","0"
+"50","3","length x3","50","4778.33","0"
+"200","3","length x3","200","16151","0"
+"1000","3","stop x3","627","55458.33","3"

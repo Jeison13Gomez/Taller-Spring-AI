@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - validSessionIdsReachTheModelExactlyAsSent()</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<div class="breadcrumbs">
+<a class="breadcrumb" href="../index.html">all</a> &gt; 
+<a class="breadcrumb" href="index.html">com.example.chat.ChatControllerSessionTest</a> &gt; 
+<span class="breadcrumb">validSessionIdsReachTheModelExactlyAsSent()</span>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a class="successGroup" href="#">Gradle Test Run :test</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Gradle Test Run :test</h2>
+<h1>validSessionIdsReachTheModelExactlyAsSent()</h1>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a class="" href="#">summary</a>
+</li>
+<li>
+<a class="" href="#">standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>summary</h2>
+<div>
+<div class="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox">
+<div class="counter">0</div>
+<p>skipped</p>
+</div>
+</td>
+<td>
+<div class="infoBox duration">
+<div class="counter">0.048s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="tab">
+<h2>standard output</h2>
+<span class="code">
+<pre id="root-0-test-stdout-validSessionIdsReachTheModelExactlyAsSent()">15:58:29.738 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=demo question=hola
+15:58:29.738 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=demo temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.738 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=demo templateId=default
+15:58:29.738 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=demo promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.739 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=demo elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@7b211077
+15:58:29.747 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=Demo question=hola
+15:58:29.748 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=Demo temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.748 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=Demo templateId=default
+15:58:29.748 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=Demo promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.748 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=Demo elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@3b770d07
+15:58:29.750 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=a-b_c question=hola
+15:58:29.751 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=a-b_c temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.751 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=a-b_c templateId=default
+15:58:29.751 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=a-b_c promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.751 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=a-b_c elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@62b0bf85
+15:58:29.753 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa question=hola
+15:58:29.753 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.753 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa templateId=default
+15:58:29.753 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.753 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@1fcaea93
+15:58:29.757 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=b41065fb-688c-475a-9b26-188f3a15d4a2 question=hola
+15:58:29.757 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=b41065fb-688c-475a-9b26-188f3a15d4a2 temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.758 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=b41065fb-688c-475a-9b26-188f3a15d4a2 templateId=default
+15:58:29.758 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=b41065fb-688c-475a-9b26-188f3a15d4a2 promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.758 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=b41065fb-688c-475a-9b26-188f3a15d4a2 elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@6c9bf3b5
+15:58:29.762 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=X question=hola
+15:58:29.762 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=X temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.762 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=X templateId=default
+15:58:29.762 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=X promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.762 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=X elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@6f07d414
+15:58:29.765 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=_ question=hola
+15:58:29.765 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=_ temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.765 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=_ templateId=default
+15:58:29.765 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=_ promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.765 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=_ elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@8ac12e6
+15:58:29.768 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=- question=hola
+15:58:29.769 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=- temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.769 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=- templateId=default
+15:58:29.769 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=- promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.769 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=- elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@40faff12
+</pre>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-validSessionIdsReachTheModelExactlyAsSent()">Copy</button>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 9.6.1</a> at 28/10/2026, 3:58:32 p. m.</p>
+</div>
+</div>
+</body>
+</html>

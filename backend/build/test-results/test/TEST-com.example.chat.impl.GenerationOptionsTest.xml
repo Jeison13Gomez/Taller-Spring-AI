@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.chat.impl.GenerationOptionsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-28T20:58:30.885Z" hostname="ALEJIWIRIKS" time="0.006">
+  <properties/>
+  <testcase name="onlySentValuesAreSet()" classname="com.example.chat.impl.GenerationOptionsTest" time="0.0"/>
+  <testcase name="sentZeroOverridesTheDefault()" classname="com.example.chat.impl.GenerationOptionsTest" time="0.0"/>
+  <testcase name="allFiveValuesAreMappedIncludingZeros()" classname="com.example.chat.impl.GenerationOptionsTest" time="0.003"/>
+  <testcase name="noSettingsMeansNoBuilder()" classname="com.example.chat.impl.GenerationOptionsTest" time="0.001"/>
+  <testcase name="unsentValuesKeepTheConfiguredDefaults()" classname="com.example.chat.impl.GenerationOptionsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,5 @@
+﻿"config","strategy","temperature","ejecuciones","parsean_ok","fallos_formato","fallos_por_check","tasa_fallo_pct","requirieron_reintento","reintentos_totales","attempts_media","totalTokens_media","totalTokens_media_solo_ok","elapsedMs_media","elapsedMs_desv","errores_servicio"
+"A","instruction","0.2","20","0","20","json=20; category=0; confidence=0; justification=0","100","0","0","1","489",,"8582.3","726.82","0"
+"B","instruction","1.0","20","9","11","json=11; category=0; confidence=0; justification=0","55","0","0","1","482","482.56","4986.2","836.95","0"
+"C","validate-retry","0.2","20","10","10","json=10; category=0; confidence=0; justification=0","50","19","34","2.7","1359.3","1199.3","14962.65","3607.04","0"
+"D","native-schema","0.2","20","20","0","json=0; category=0; confidence=0; justification=0","0","0","0","1","285.85","285.85","5747.25","757.11","0"

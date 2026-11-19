@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.chat.impl.SpringAiModelServiceMemoryTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2026-10-28T20:58:31.252Z" hostname="ALEJIWIRIKS" time="0.432">
+  <properties/>
+  <testcase name="aWindowOfTwoKeepsExactlyTheLastExchange()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.013"/>
+  <testcase name="aTurnThatChangesTemplateSendsOnlyThatTemplatesSystemTextAndKeepsTheHistory()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.02"/>
+  <testcase name="laterTurnsSendTheEarlierQuestionsAndAnswersInOrderAfterTheSystemMessage()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.003"/>
+  <testcase name="aSessionIdleForLessThanTheTimeoutKeepsItsHistory()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.007"/>
+  <testcase name="theHundredAndFirstSessionDropsTheLeastRecentlyUsedOne()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.049"/>
+  <testcase name="usingASessionKeepsItAliveSoTheIdleTimeIsCountedFromTheLastUse()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.004"/>
+  <testcase name="aSessionIdleForLongerThanTheTimeoutStartsEmpty()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.005"/>
+  <testcase name="theHistoryOfTheSameSessionAlwaysReachesTheModelAndTheOtherSessionNeverDoes()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.017"/>
+  <testcase name="aTurnWithoutTemplateIdUsesTheDefaultTextAndKeepsTheHistory()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.009"/>
+  <testcase name="aRequestWithoutSessionIdSendsOnlySystemAndQuestionEveryTimeAndStoresNothing()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.003"/>
+  <testcase name="everyRequestHasExactlyOneSystemMessageAcrossTenTurnsWithChangingTemplates()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.038"/>
+  <testcase name="aThousandDistinctSessionsNeverMakeTheStoredCountExceedTheCap()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.201"/>
+  <testcase name="theSystemMessageIsFirstAndAloneInEveryRequestWhateverTheHistorySize()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.01"/>
+  <testcase name="theFirstTurnOfASessionSendsOnlySystemAndQuestionAndReportsNoHistory()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.004"/>
+  <testcase name="historyMessagesIsAlwaysTheNumberOfMessagesSentMinusSystemAndQuestion()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.005"/>
+  <testcase name="noSystemMessageIsEverStoredInTheHistory()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.003"/>
+  <testcase name="withAWindowOfFourTheSixthRequestCarriesOnlyTheLastFourHistoryMessages()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.004"/>
+  <testcase name="withTheDefaultWindowTwelveTurnsReportZeroToTwentyAndThenStayAtTwenty()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.011"/>
+  <testcase name="anOddWindowOfThreeBehavesLikeTwoAndNeverStartsWithAnAnswer()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.01"/>
+  <testcase name="interleavedSessionsNeverSeeEachOthersText()" classname="com.example.chat.impl.SpringAiModelServiceMemoryTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

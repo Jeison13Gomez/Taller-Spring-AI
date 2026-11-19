@@ -1,0 +1,81 @@
+﻿"config","run","strategy","temperature","http","tipo","category","confidence","justification","retried","retries","attempts","elapsedMs","totalTokens","promptTokens","completionTokens","failureCheck","failureMessage"
+"A","1","instruction","0.2","502","formato",,,,"False","0","1","6422","489","430","59","json","the answer is not valid JSON"
+"B","1","instruction","1.0","200","ok","queja","0.8","El usuario expresa insatisfacción por no recibir su pedido y por no recibir una solución para su problema en el servicio de atención al cliente.","False","0","1","5747","482","430","52",,
+"C","1","validate-retry","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama un servicio no realizado","True","2","3","18882","1504","1348","156",,
+"D","1","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido hace tres semanas y no ha obtenido una solución después de llamar dos veces al servicio de atención al cliente.","False","0","1","7430","291","225","66",,
+"A","2","instruction","0.2","502","formato",,,,"False","0","1","9994","489","430","59","json","the answer is not valid JSON"
+"B","2","instruction","1.0","200","ok","queja","0.9","El usuario expresa insatisfacción por no haber recibido su pedido y falta de ayuda del servicio de atención al cliente","False","0","1","5074","481","430","51",,
+"C","2","validate-retry","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama un servicio no realizado","True","2","3","16485","1504","1348","156",,
+"D","2","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido hace tres semanas y no ha obtenido una solución después de llamar dos veces al servicio de atención al cliente.","False","0","1","7163","291","225","66",,
+"A","3","instruction","0.2","502","formato",,,,"False","0","1","8917","489","430","59","json","the answer is not valid JSON"
+"B","3","instruction","1.0","200","ok","queja","0.9","expresó insatisfacción y reclamó una solución para un pedido no entregado en un plazo razonable","False","0","1","4873","478","430","48",,
+"C","3","validate-retry","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama un servicio no realizado","True","2","3","16622","1504","1348","156",,
+"D","3","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido y no haber obtenido una solución al servicio de atención al cliente.","False","0","1","5969","282","225","57",,
+"A","4","instruction","0.2","502","formato",,,,"False","0","1","9321","489","430","59","json","the answer is not valid JSON"
+"B","4","instruction","1.0","200","ok","queja","0.8","El usuario expresa insatisfacción por no recibir su pedido y no obtener una solución después de llamar dos veces al servicio de atención al cliente","False","0","1","5174","487","430","57",,
+"C","4","validate-retry","0.2","502","formato",,,,"True","2","3","19286","1522","1348","174","json","the answer is not valid JSON"
+"D","4","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido hace tres semanas y no ha obtenido una solución después de llamar dos veces al servicio de atención al cliente.","False","0","1","6468","291","225","66",,
+"A","5","instruction","0.2","502","formato",,,,"False","0","1","9446","489","430","59","json","the answer is not valid JSON"
+"B","5","instruction","1.0","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama que se devuelva el dinero después de una espera prolongada y sin solución","False","0","1","5888","487","430","57",,
+"C","5","validate-retry","0.2","502","formato",,,,"True","2","3","18271","1521","1348","173","json","the answer is not valid JSON"
+"D","5","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido y no haber obtenido una solución al servicio de atención al cliente.","False","0","1","5258","282","225","57",,
+"A","6","instruction","0.2","502","formato",,,,"False","0","1","8442","489","430","59","json","the answer is not valid JSON"
+"B","6","instruction","1.0","502","formato",,,,"False","0","1","4883","479","430","49","json","the answer is not valid JSON"
+"C","6","validate-retry","0.2","502","formato",,,,"True","2","3","17354","1519","1348","171","json","the answer is not valid JSON"
+"D","6","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido hace tres semanas y no ha obtenido una solución después de llamar dos veces al servicio de atención al cliente.","False","0","1","6258","291","225","66",,
+"A","7","instruction","0.2","502","formato",,,,"False","0","1","9167","489","430","59","json","the answer is not valid JSON"
+"B","7","instruction","1.0","502","formato",,,,"False","0","1","4948","479","430","49","json","the answer is not valid JSON"
+"C","7","validate-retry","0.2","502","formato",,,,"True","2","3","17319","1517","1348","169","json","the answer is not valid JSON"
+"D","7","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido y no haber obtenido una solución al servicio de atención al cliente.","False","0","1","5368","282","225","57",,
+"A","8","instruction","0.2","502","formato",,,,"False","0","1","8665","489","430","59","json","the answer is not valid JSON"
+"B","8","instruction","1.0","502","formato",,,,"False","0","1","2968","462","430","32","json","the answer is not valid JSON"
+"C","8","validate-retry","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama una solución para un pedido no entregado después de varias llamadas al servicio de atención al cliente.","False","0","1","6545","490","430","60",,
+"D","8","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido y no haber obtenido una solución a través de las llamadas al servicio de atención al cliente.","False","0","1","5628","288","225","63",,
+"A","9","instruction","0.2","502","formato",,,,"False","0","1","9075","489","430","59","json","the answer is not valid JSON"
+"B","9","instruction","1.0","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama una solución","False","0","1","4241","473","430","43",,
+"C","9","validate-retry","0.2","502","formato",,,,"True","2","3","17466","1519","1348","171","json","the answer is not valid JSON"
+"D","9","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama que se devuelva el dinero, indicando que el pedido no ha llegado y que el servicio de atención al cliente no ha podido resolver el problema.","False","0","1","6377","294","225","69",,
+"A","10","instruction","0.2","502","formato",,,,"False","0","1","8493","489","430","59","json","the answer is not valid JSON"
+"B","10","instruction","1.0","502","formato",,,,"False","0","1","6280","487","430","57","json","the answer is not valid JSON"
+"C","10","validate-retry","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama un servicio no realizado","True","2","3","15219","1504","1348","156",,
+"D","10","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido y no haber obtenido una solución para su problema.","False","0","1","4820","279","225","54",,
+"A","11","instruction","0.2","502","formato",,,,"False","0","1","8896","489","430","59","json","the answer is not valid JSON"
+"B","11","instruction","1.0","200","ok","queja","0.8","El usuario expresa insatisfacción por no recibir su pedido y no recibir una solución después de contactar con el servicio de atención al cliente.","False","0","1","5699","489","430","59",,
+"C","11","validate-retry","0.2","502","formato",,,,"True","2","3","16339","1519","1348","171","json","the answer is not valid JSON"
+"D","11","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido hace tres semanas y no ha obtenido una solución después de llamar dos veces al servicio de atención al cliente.","False","0","1","6190","291","225","66",,
+"A","12","instruction","0.2","502","formato",,,,"False","0","1","8230","489","430","59","json","the answer is not valid JSON"
+"B","12","instruction","1.0","502","formato",,,,"False","0","1","5408","489","430","59","json","the answer is not valid JSON"
+"C","12","validate-retry","0.2","502","formato",,,,"True","2","3","16306","1519","1348","171","json","the answer is not valid JSON"
+"D","12","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido y no haber obtenido una solución para su problema.","False","0","1","4860","279","225","54",,
+"A","13","instruction","0.2","502","formato",,,,"False","0","1","8629","489","430","59","json","the answer is not valid JSON"
+"B","13","instruction","1.0","200","ok","queja","0.9","El usuario expresa insatisfacción por no recibir su pedido a tiempo y por falta de solución por parte del servicio de atención al cliente","False","0","1","5589","488","430","58",,
+"C","13","validate-retry","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama una solución para un pedido no entregado y sin respuesta al servicio de atención al cliente.","True","2","3","15216","1509","1348","161",,
+"D","13","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido hace tres semanas y no ha obtenido una solución después de llamar dos veces al servicio de atención al cliente.","False","0","1","5808","291","225","66",,
+"A","14","instruction","0.2","502","formato",,,,"False","0","1","8228","489","430","59","json","the answer is not valid JSON"
+"B","14","instruction","1.0","502","formato",,,,"False","0","1","6086","499","430","69","json","the answer is not valid JSON"
+"C","14","validate-retry","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama una solución para un pedido no entregado después de varias llamadas al servicio de atención al cliente.","True","1","2","11209","1008","889","119",,
+"D","14","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido y no haber obtenido una solución al hablar con el servicio de atención al cliente.","False","0","1","5555","285","225","60",,
+"A","15","instruction","0.2","502","formato",,,,"False","0","1","8098","489","430","59","json","the answer is not valid JSON"
+"B","15","instruction","1.0","502","formato",,,,"False","0","1","4731","484","430","54","json","the answer is not valid JSON"
+"C","15","validate-retry","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama un servicio no realizado","True","1","2","9547","989","889","100",,
+"D","15","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido hace tres semanas y no ha obtenido una solución después de llamar dos veces al servicio de atención al cliente.","False","0","1","5829","291","225","66",,
+"A","16","instruction","0.2","502","formato",,,,"False","0","1","8134","489","430","59","json","the answer is not valid JSON"
+"B","16","instruction","1.0","502","formato",,,,"False","0","1","3876","473","430","43","json","the answer is not valid JSON"
+"C","16","validate-retry","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama un servicio no realizado","True","1","2","9321","987","889","98",,
+"D","16","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama la devolución del dinero debido a la falta de entrega y la falta de solución por parte del servicio de atención al cliente.","False","0","1","5783","287","225","62",,
+"A","17","instruction","0.2","502","formato",,,,"False","0","1","8158","489","430","59","json","the answer is not valid JSON"
+"B","17","instruction","1.0","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama una solución para su pedido tardío","False","0","1","4199","478","430","48",,
+"C","17","validate-retry","0.2","502","formato",,,,"True","2","3","15989","1521","1348","173","json","the answer is not valid JSON"
+"D","17","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido y no haber obtenido una solución para su problema.","False","0","1","4716","279","225","54",,
+"A","18","instruction","0.2","502","formato",,,,"False","0","1","8096","487","430","57","json","the answer is not valid JSON"
+"B","18","instruction","1.0","502","formato",,,,"False","0","1","4796","484","430","54","json","the answer is not valid JSON"
+"C","18","validate-retry","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama una solución para un pedido no entregado","True","1","2","9876","994","889","105",,
+"D","18","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido y no haber obtenido una solución para su problema.","False","0","1","4783","279","225","54",,
+"A","19","instruction","0.2","502","formato",,,,"False","0","1","8344","491","430","61","json","the answer is not valid JSON"
+"B","19","instruction","1.0","502","formato",,,,"False","0","1","3896","472","430","42","json","the answer is not valid JSON"
+"C","19","validate-retry","0.2","502","formato",,,,"True","2","3","16540","1519","1348","171","json","the answer is not valid JSON"
+"D","19","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama una solución, específicamente pidiendo devolver el dinero, lo que indica una queja","False","0","1","5670","282","225","57",,
+"A","20","instruction","0.2","502","formato",,,,"False","0","1","8891","489","430","59","json","the answer is not valid JSON"
+"B","20","instruction","1.0","502","formato",,,,"False","0","1","5368","489","430","59","json","the answer is not valid JSON"
+"C","20","validate-retry","0.2","502","formato",,,,"True","2","3","15461","1517","1348","169","json","the answer is not valid JSON"
+"D","20","native-schema","0.2","200","ok","queja","0.9","El usuario expresa insatisfacción y reclama no haber recibido su pedido y no haber obtenido una solución al servicio de atención al cliente.","False","0","1","5012","282","225","57",,

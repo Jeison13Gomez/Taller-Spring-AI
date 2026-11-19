@@ -1,0 +1,400 @@
+sección presenta las recomendaciones al Consejo Nacional de Política Económica y Social 
+
+(CONPES). 
+
+17 
+
+2. ANTECEDENTES Y JUSTIFICACIÓN 
+
+ En los últimos años, el Gobierno nacional ha trabajado en la formulación de 
+
+diversos instrumentos de política pública para la generación de valor económico y social 
+
+en el país a través del acceso y aprovechamiento de los datos y las tecnologías digitales 
+
+como la IA. No obstante, en Colombia persisten bajas capacidades para la investigación, 
+
+desarrollo, adopción y aprovechamiento ético y sostenible de sistemas de IA en asuntos 
+
+estratégicos a nivel social, económico y ambiental. En este contexto, la presente sección 
+
+tiene como objetivo exponer los antecedentes de política pública desarrollados en el país 
+
+respecto a los elementos habilitadores para la IA, tales como gobernanza, ética, 
+
+infraestructura tecnológica, I+D+i, y talento digital. Asimismo, se destacan los antecedentes 
+
+representativos en cuanto al abordaje de riesgos y efectos no deseados, y la promoción del 
+
+uso y aprovechamiento de la IA en Colombia.  
+
+2.1. Políticas e iniciativas transversales alrededor de la IA 
+
+Mediante el documento CONPES 39754 de 2019 Política Nacional para la 
+
+Transformación Digital e Inteligencia Artificial, Colombia adoptó la primera política 
+
+pública que reconoció a la IA como una tecnología aceleradora de la transformación 
+
+digital. Dicha política tuvo dentro de sus objetivos el desarrollar condiciones habilitantes para 
+
+preparar a Colombia con respecto a los cambios económicos y sociales que conlleva la IA. 
+
+Por lo cual, la política en uno de sus ejes planteó 21 acciones enfocadas en crear el entorno 
+
+propicio para el desarrollo de la IA e impulsar el desarrollo de tecnologías digitales para la 
+
+Cuarta Revolución Industrial (4RI) en Colombia.  
+
+El documento CONPES 3975 representó un avance significativo para el país; sin 
+
+embargo, culminó en el año 2022.
+Watch, 2024), estos habilitadores son esenciales para superar barreras y maximizar los 
+
+beneficios de la IA, generando las condiciones para crear un ecosistema robusto y sostenible 
+
+que impulse la competitividad y el desarrollo económico y social de un país. Los cuatro 
+
+habilitadores definidos para la política pública de IA en Colombia son: (i) Ética y 
+
+Gobernanza; (ii) Datos e infraestructura; (iii) Investigación, desarrollo e innovación; y (iv) 
+
+Capacidades y talento digital.  
+
+La ética y la gobernanza, como habilitadores de la política pública de IA, se refieren 
+
+a los principios, marcos, instituciones, procesos y mecanismos que garantizan que el 
+
+desarrollo y la implementación de la inteligencia artificial se realicen de manera responsable, 
+
+transparente y alineada con los objetivos estratégicos del país, valores sociales y derechos 
+
+humanos.  
+
+Los datos y la infraestructura como habilitadores de la política pública de IA se refieren 
+
+a los a los recursos técnicos y tecnológicos esenciales que permiten el desarrollo, 
+
+implementación y escalamiento efectivo de la inteligencia artificial en el ámbito público. Estos 
+
+recursos esenciales incluyen: (i) acceso a datos de calidad; (ii) interoperabilidad y estándares; 
+
+(iii) protección de la privacidad; (iv) gobernanza de datos; (v) capacidad de cómputo; (vi) 
+
+almacenamiento de datos; (vii) redes y conectividad; y (viii) plataformas de desarrollo de IA. 
+
+La investigación, el desarrollo y la innovación (I+D+i) como habilitadores de la política 
+
+pública de IA se refieren a los esfuerzos y actividades orientados a crear nuevos 
+
+41 
+
+conocimientos, tecnologías y soluciones que impulsen el avance y aplicación de la 
+
+inteligencia artificial. 
+
+La capacidad y el talento digital como habilitadores de la política pública de IA se 
+
+refieren a las competencias, habilidades y conocimientos necesarios en la fuerza laboral y
+El abordaje y los objetivos propuestos para esta política resultan de los aportes de 
+
+los ministerios, departamentos administrativos, y otras entidades del Gobierno nacional, 
+
+así como de los ejercicios participativos realizados, tanto a nivel nacional como territorial, 
+
+con entidades públicas, sector privado, academia, organismos multilaterales, organizaciones 
+
+3 Según el Ministerio de Ciencia, Tecnología e Innovación en su Política Pública de Apropiación Social del 
+
+Conocimiento (ASC) en el marco de la Ciencia, Tecnología e Innovación (Ministerio de Ciencia, Tecnología e 
+
+Innovación, 2021), la Apropiación Social del Conocimiento es un proceso que permite generar acceso, 
+
+participación e intercambio de conocimientos científicos y tecnológicos para resolver problemas locales, 
+
+implicando que toda la población, no solo los expertos, comprenda y use la IA efectivamente para decisiones 
+
+informadas y debates públicos. 
+
+16 
+
+de la sociedad civil y ciudadanía. Estos ejercicios participativos se realizaron a través de 
+
+más de 15 mesas técnicas con el aporte de 150 representantes de diversos sectores, lo que 
+
+generó más de 200 propuestas de acciones. Lo anterior permitió identificar las problemáticas 
+
+y preocupaciones con respecto al desarrollo y adopción de la IA, así como orientar la 
+
+definición de la visión y las acciones de política para que esta tecnología se traduzca en 
+
+beneficios para el país. 
+
+Este documento se desarrolla en seis secciones, incluyendo esta introducción. La 
+
+segunda sección abarca los antecedentes y la justificación para la presente política, y la 
+
+tercera sección presenta el marco conceptual. En la cuarta sección se expone el diagnóstico 
+
+de las problemáticas alrededor de seis ejes estratégicos. En la quinta sección se define la 
+
+política que, además de los objetivos, contiene las acciones definidas para alcanzarlos, el 
+
+esquema general de seguimiento y el costo indicativo de la política. Finalmente, la sexta
+---------------------
+
+Given the context and provided history information and not prior knowledge,
+reply to the user comment. If the answer is not in the context, inform
+the user that you can't answer the question.
+', metadata={messageType=USER}, messageType=USER}], modelOptions=org.springframework.ai.ollama.api.OllamaChatOptions@25eb1d46}, context={chat_memory_conversation_id=98cb6329-6bdd-4013-baab-357f428a0b5a, qa_retrieved_documents=[Document{id='8b3ef392-5d0b-40b2-9e89-93635b2de3db', text='Industria y Turismo, el Departamento Nacional de Planeación; Presidencia de la República; 
+
+entre otros. Estas entidades ejecutarán 106 acciones hasta 2030 con una inversión total 
+
+aproximada de 479.273 millones de pesos. 
+
+4 
+
+Clasificación:  O32, O33, O14, Q55 
+
+Palabras clave: Inteligencia Artificial, transformación digital, Tecnologías de la Información y 
+
+Comunicaciones, Datos, sistemas de IA 
+
+5 
+
+Tabla de contenido 
+
+1. INTRODUCCIÓN ............................................................................................ 13 
+
+2. ANTECEDENTES Y JUSTIFICACIÓN ....................................................................... 17 
+
+2.1. Políticas e iniciativas transversales alrededor de la IA ...................................... 17 
+
+2.2. Políticas en materia de ética y gobernanza de la IA ........................................ 18 
+
+2.3. Políticas para el fortalecimiento de datos e infraestructura tecnológica relacionadas 
+
+con la IA ..................................................................................................... 20 
+
+2.4. Políticas relacionadas con Investigación, desarrollo e innovación para la IA ...... 24 
+
+2.5. Políticas relacionadas con capacidades y talento digital para la IA ................... 26 
+
+2.6. Políticas que abordan riesgos y efectos no deseados relacionados con la IA ...... 27 
+
+2.6.1. Políticas relacionadas con la seguridad y la confianza en la IA ........................ 28 
+
+2.6.2. Políticas que abordan la propiedad intelectual y protección de datos personales 
+
+relacionadas con la IA ................................................................................. 29 
+
+2.6.3. Políticas que abordan la inclusión, equidad y sostenibilidad ambiental relacionadas 
+
+con la IA ..................................................................................................... 30 
+
+2.7. Políticas que promueven el uso y adopción de la IA ........................................ 31 
+
+2.8. Justificación ................................................................................................. 32 
+
+3. MARCO CONCEPTUAL ..................................................................................... 34 
+
+4. DIAGNÓSTICO .............................................................................................. 41 
+
+4.1. Insuficiencias en los mecanismos de gobernanza y en la verificación del', media='null', metadata={chunk_index=3, parent_document_id=fd124520-a629-4893-b961-5dbc117670dd, source=4144-1-50.pdf, distance=0.32563224, total_chunks=72, fuente=4144-1-50.pdf}, score=0.674367755651474}, Document{id='9be38826-f0e1-4819-8806-f0de6bcb8da5', text='sección presenta las recomendaciones al Consejo Nacional de Política Económica y Social 
+
+(CONPES). 
+
+17 
+
+2. ANTECEDENTES Y JUSTIFICACIÓN 
+
+ En los últimos años, el Gobierno nacional ha trabajado en la formulación de 
+
+diversos instrumentos de política pública para la generación de valor económico y social 
+
+en el país a través del acceso y aprovechamiento de los datos y las tecnologías digitales 
+
+como la IA. No obstante, en Colombia persisten bajas capacidades para la investigación, 
+
+desarrollo, adopción y aprovechamiento ético y sostenible de sistemas de IA en asuntos 
+
+estratégicos a nivel social, económico y ambiental. En este contexto, la presente sección 
+
+tiene como objetivo exponer los antecedentes de política pública desarrollados en el país 
+
+respecto a los elementos habilitadores para la IA, tales como gobernanza, ética, 
+
+infraestructura tecnológica, I+D+i, y talento digital. Asimismo, se destacan los antecedentes 
+
+representativos en cuanto al abordaje de riesgos y efectos no deseados, y la promoción del 
+
+uso y aprovechamiento de la IA en Colombia.  
+
+2.1. Políticas e iniciativas transversales alrededor de la IA 
+
+Mediante el documento CONPES 39754 de 2019 Política Nacional para la 
+
+Transformación Digital e Inteligencia Artificial, Colombia adoptó la primera política 
+
+pública que reconoció a la IA como una tecnología aceleradora de la transformación 
+
+digital. Dicha política tuvo dentro de sus objetivos el desarrollar condiciones habilitantes para 
+
+preparar a Colombia con respecto a los cambios económicos y sociales que conlleva la IA. 
+
+Por lo cual, la política en uno de sus ejes planteó 21 acciones enfocadas en crear el entorno 
+
+propicio para el desarrollo de la IA e impulsar el desarrollo de tecnologías digitales para la 
+
+Cuarta Revolución Industrial (4RI) en Colombia.  
+
+El documento CONPES 3975 representó un avance significativo para el país; sin 
+
+embargo, culminó en el año 2022.', media='null', metadata={chunk_index=17, parent_document_id=fd124520-a629-4893-b961-5dbc117670dd, source=4144-1-50.pdf, distance=0.33056888, total_chunks=72, fuente=4144-1-50.pdf}, score=0.6694311201572418}, Document{id='cad83466-cd71-4129-8995-1766ab1cde33', text='Watch, 2024), estos habilitadores son esenciales para superar barreras y maximizar los 
+
+beneficios de la IA, generando las condiciones para crear un ecosistema robusto y sostenible 
+
+que impulse la competitividad y el desarrollo económico y social de un país. Los cuatro 
+
+habilitadores definidos para la política pública de IA en Colombia son: (i) Ética y 
+
+Gobernanza; (ii) Datos e infraestructura; (iii) Investigación, desarrollo e innovación; y (iv) 
+
+Capacidades y talento digital.  
+
+La ética y la gobernanza, como habilitadores de la política pública de IA, se refieren 
+
+a los principios, marcos, instituciones, procesos y mecanismos que garantizan que el 
+
+desarrollo y la implementación de la inteligencia artificial se realicen de manera responsable, 
+
+transparente y alineada con los objetivos estratégicos del país, valores sociales y derechos 
+
+humanos.  
+
+Los datos y la infraestructura como habilitadores de la política pública de IA se refieren 
+
+a los a los recursos técnicos y tecnológicos esenciales que permiten el desarrollo, 
+
+implementación y escalamiento efectivo de la inteligencia artificial en el ámbito público. Estos 
+
+recursos esenciales incluyen: (i) acceso a datos de calidad; (ii) interoperabilidad y estándares; 
+
+(iii) protección de la privacidad; (iv) gobernanza de datos; (v) capacidad de cómputo; (vi) 
+
+almacenamiento de datos; (vii) redes y conectividad; y (viii) plataformas de desarrollo de IA. 
+
+La investigación, el desarrollo y la innovación (I+D+i) como habilitadores de la política 
+
+pública de IA se refieren a los esfuerzos y actividades orientados a crear nuevos 
+
+41 
+
+conocimientos, tecnologías y soluciones que impulsen el avance y aplicación de la 
+
+inteligencia artificial. 
+
+La capacidad y el talento digital como habilitadores de la política pública de IA se 
+
+refieren a las competencias, habilidades y conocimientos necesarios en la fuerza laboral y', media='null', metadata={chunk_index=54, parent_document_id=fd124520-a629-4893-b961-5dbc117670dd, source=4144-1-50.pdf, distance=0.33563235, total_chunks=72, fuente=4144-1-50.pdf}, score=0.6643676459789276}, Document{id='1e7df93b-f4e0-48b2-9845-0364dd7f04e8', text='El abordaje y los objetivos propuestos para esta política resultan de los aportes de 
+
+los ministerios, departamentos administrativos, y otras entidades del Gobierno nacional, 
+
+así como de los ejercicios participativos realizados, tanto a nivel nacional como territorial, 
+
+con entidades públicas, sector privado, academia, organismos multilaterales, organizaciones 
+
+3 Según el Ministerio de Ciencia, Tecnología e Innovación en su Política Pública de Apropiación Social del 
+
+Conocimiento (ASC) en el marco de la Ciencia, Tecnología e Innovación (Ministerio de Ciencia, Tecnología e 
+
+Innovación, 2021), la Apropiación Social del Conocimiento es un proceso que permite generar acceso, 
+
+participación e intercambio de conocimientos científicos y tecnológicos para resolver problemas locales, 
+
+implicando que toda la población, no solo los expertos, comprenda y use la IA efectivamente para decisiones 
+
+informadas y debates públicos. 
+
+16 
+
+de la sociedad civil y ciudadanía. Estos ejercicios participativos se realizaron a través de 
+
+más de 15 mesas técnicas con el aporte de 150 representantes de diversos sectores, lo que 
+
+generó más de 200 propuestas de acciones. Lo anterior permitió identificar las problemáticas 
+
+y preocupaciones con respecto al desarrollo y adopción de la IA, así como orientar la 
+
+definición de la visión y las acciones de política para que esta tecnología se traduzca en 
+
+beneficios para el país. 
+
+Este documento se desarrolla en seis secciones, incluyendo esta introducción. La 
+
+segunda sección abarca los antecedentes y la justificación para la presente política, y la 
+
+tercera sección presenta el marco conceptual. En la cuarta sección se expone el diagnóstico 
+
+de las problemáticas alrededor de seis ejes estratégicos. En la quinta sección se define la 
+
+política que, además de los objetivos, contiene las acciones definidas para alcanzarlos, el 
+
+esquema general de seguimiento y el costo indicativo de la política. Finalmente, la sexta', media='null', metadata={chunk_index=16, parent_document_id=fd124520-a629-4893-b961-5dbc117670dd, source=4144-1-50.pdf, distance=0.3517177, total_chunks=72, fuente=4144-1-50.pdf}, score=0.6482822895050049}]}]
+2026-10-29T05:58:15.451Z DEBUG 1 --- [nio-8080-exec-2] o.s.a.c.c.advisor.SimpleLoggerAdvisor    : response: {
+  "metadata" : {
+    "empty" : false,
+    "id" : "",
+    "model" : "llama3.2:3b",
+    "promptMetadata" : [ ],
+    "rateLimit" : {
+      "requestsLimit" : 0,
+      "requestsRemaining" : 0,
+      "requestsReset" : "PT0S",
+      "tokensLimit" : 0,
+      "tokensRemaining" : 0,
+      "tokensReset" : "PT0S"
+    },
+    "usage" : {
+      "promptTokens" : 2229,
+      "completionTokens" : 46,
+      "totalTokens" : 2275
+    }
+  },
+  "result" : {
+    "metadata" : {
+      "contentFilters" : [ ],
+      "empty" : true,
+      "finishReason" : "stop"
+    },
+    "output" : {
+      "media" : [ ],
+      "messageType" : "ASSISTANT",
+      "metadata" : {
+        "messageType" : "ASSISTANT"
+      },
+      "text" : "Según el CONPES 4144 de 2025, la política tiene 6 ejes estratégicos. Sin embargo, no tengo información detallada sobre estos ejes y sus objetivos específicos.",
+      "toolCalls" : [ ]
+    }
+  },
+  "results" : [ {
+    "metadata" : {
+      "contentFilters" : [ ],
+      "empty" : true,
+      "finishReason" : "stop"
+    },
+    "output" : {
+      "media" : [ ],
+      "messageType" : "ASSISTANT",
+      "metadata" : {
+        "messageType" : "ASSISTANT"
+      },
+      "text" : "Según el CONPES 4144 de 2025, la política tiene 6 ejes estratégicos. Sin embargo, no tengo información detallada sobre estos ejes y sus objetivos específicos.",
+      "toolCalls" : [ ]
+    }
+  } ]
+}
+2026-10-29T05:58:15.451Z DEBUG 1 --- [nio-8080-exec-2] c.e.chat.impl.SpringAiModelService       : Respuesta recibida. sessionId=98cb6329-6bdd-4013-baab-357f428a0b5a longitud=158
+2026-10-29T05:58:15.451Z  INFO 1 --- [nio-8080-exec-2] com.example.chat.ChatController          : Chat usage sessionId=98cb6329-6bdd-4013-baab-357f428a0b5a promptTokens=2229 completionTokens=46 totalTokens=2275 model=llama3.2:3b finishReason=stop tokensPerSecond=10.11
+2026-10-29T05:58:15.451Z  INFO 1 --- [nio-8080-exec-2] com.example.chat.ChatController          : Chat response for sessionId=98cb6329-6bdd-4013-baab-357f428a0b5a elapsedMs=35498 status=ok response=com.example.chat.dto.ChatResponse@2ff7000e
+2026-10-29T05:58:15.462Z DEBUG 1 --- [nio-8080-exec-3] c.e.chat.filter.LogRedactionFilter       : Request: method=GET path=/health/llm

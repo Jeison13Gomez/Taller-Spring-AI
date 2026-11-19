@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.chat.memory.BoundedChatMemoryRepositoryTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-28T20:58:31.737Z" hostname="ALEJIWIRIKS" time="0.02">
+  <properties/>
+  <testcase name="aWriteRefreshesTheLastUseTime()" classname="com.example.chat.memory.BoundedChatMemoryRepositoryTest" time="0.003"/>
+  <testcase name="savedMessagesComeBackInTheSameOrder()" classname="com.example.chat.memory.BoundedChatMemoryRepositoryTest" time="0.001"/>
+  <testcase name="updatingAnExistingSessionNeverEvictsAnotherOne()" classname="com.example.chat.memory.BoundedChatMemoryRepositoryTest" time="0.001"/>
+  <testcase name="theFourthSessionDropsTheLeastRecentlyUsedNotTheOldestCreated()" classname="com.example.chat.memory.BoundedChatMemoryRepositoryTest" time="0.001"/>
+  <testcase name="theReturnedListIsACopyAndTheStoredOneIsNotAffectedByTheCaller()" classname="com.example.chat.memory.BoundedChatMemoryRepositoryTest" time="0.001"/>
+  <testcase name="twoIdsNeverSeeEachOthersMessages()" classname="com.example.chat.memory.BoundedChatMemoryRepositoryTest" time="0.001"/>
+  <testcase name="anIdIdleForLessThanTheTimeoutIsKept()" classname="com.example.chat.memory.BoundedChatMemoryRepositoryTest" time="0.0"/>
+  <testcase name="aReadRefreshesTheLastUseTime()" classname="com.example.chat.memory.BoundedChatMemoryRepositoryTest" time="0.0"/>
+  <testcase name="anIdIdleForLongerThanTheTimeoutIsGoneOnTheNextRead()" classname="com.example.chat.memory.BoundedChatMemoryRepositoryTest" time="0.0"/>
+  <testcase name="saveAllReplacesWhatWasStored()" classname="com.example.chat.memory.BoundedChatMemoryRepositoryTest" time="0.0"/>
+  <testcase name="deleteRemovesOneIdOnly()" classname="com.example.chat.memory.BoundedChatMemoryRepositoryTest" time="0.0"/>
+  <testcase name="theNumberOfSessionsNeverExceedsTheCap()" classname="com.example.chat.memory.BoundedChatMemoryRepositoryTest" time="0.001"/>
+  <testcase name="anUnknownIdReturnsAnEmptyList()" classname="com.example.chat.memory.BoundedChatMemoryRepositoryTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

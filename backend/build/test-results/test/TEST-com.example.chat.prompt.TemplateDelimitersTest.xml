@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.chat.prompt.TemplateDelimitersTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-28T20:58:32.121Z" hostname="ALEJIWIRIKS" time="0.005">
+  <properties/>
+  <testcase name="withAngleBracketsALoneLessThanSignBreaksTheTemplate()" classname="com.example.chat.prompt.TemplateDelimitersTest" time="0.001"/>
+  <testcase name="withAngleBracketsTheJsonExampleStaysLiteralAndTheVariableIsReplaced()" classname="com.example.chat.prompt.TemplateDelimitersTest" time="0.001"/>
+  <testcase name="withDefaultBracesAJsonExampleBreaksTheTemplate()" classname="com.example.chat.prompt.TemplateDelimitersTest" time="0.001"/>
+  <system-out><![CDATA[15:58:32.123 [Test worker] ERROR org.springframework.ai.template.st.StTemplateRenderer -- 1:9: 'entonces' came as a complete surprise to me
+15:58:32.126 [Test worker] ERROR org.springframework.ai.template.st.StTemplateRenderer -- 1:42: '"otro"' came as a complete surprise to me
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

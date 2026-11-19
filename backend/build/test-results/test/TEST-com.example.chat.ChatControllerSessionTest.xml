@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.chat.ChatControllerSessionTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-28T20:58:29.107Z" hostname="ALEJIWIRIKS" time="0.662">
+  <properties/>
+  <testcase name="anEmptySessionIdIsRejected()" classname="com.example.chat.ChatControllerSessionTest" time="0.033"/>
+  <testcase name="theSessionIdErrorComesFirstAmongSeveralInvalidFields()" classname="com.example.chat.ChatControllerSessionTest" time="0.017"/>
+  <testcase name="sessionIdsThatDifferOnlyInCaseReachTheModelAsDifferentStrings()" classname="com.example.chat.ChatControllerSessionTest" time="0.016"/>
+  <testcase name="aBlankAnswerIsA502WithoutHistoryMessages()" classname="com.example.chat.ChatControllerSessionTest" time="0.014"/>
+  <testcase name="aRequestWithoutHistoryReportsZeroNotAbsent()" classname="com.example.chat.ChatControllerSessionTest" time="0.017"/>
+  <testcase name="aSuccessfulResponseCarriesHistoryMessagesFromTheModelResult()" classname="com.example.chat.ChatControllerSessionTest" time="0.038"/>
+  <testcase name="aSessionIdOfOnlySpacesIsRejected()" classname="com.example.chat.ChatControllerSessionTest" time="0.016"/>
+  <testcase name="anAbsentOrNullSessionIdIsNotAnError()" classname="com.example.chat.ChatControllerSessionTest" time="0.027"/>
+  <testcase name="aSessionIdWithCharactersOutsideTheRuleIsRejected()" classname="com.example.chat.ChatControllerSessionTest" time="0.065"/>
+  <testcase name="aSessionIdLongerThan64CharactersIsRejected()" classname="com.example.chat.ChatControllerSessionTest" time="0.021"/>
+  <testcase name="everyExistingFieldKeepsItsNameAndMeaning()" classname="com.example.chat.ChatControllerSessionTest" time="0.024"/>
+  <testcase name="aRejectedRequestIsA400WithoutHistoryMessages()" classname="com.example.chat.ChatControllerSessionTest" time="0.015"/>
+  <testcase name="theRejectedValueIsNotRepeatedInTheResponse()" classname="com.example.chat.ChatControllerSessionTest" time="0.023"/>
+  <testcase name="validSessionIdsReachTheModelExactlyAsSent()" classname="com.example.chat.ChatControllerSessionTest" time="0.048"/>
+  <system-out><![CDATA[15:58:29.125 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+15:58:29.125 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+15:58:29.126 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms
+15:58:29.153 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.172 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+15:58:29.174 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+15:58:29.174 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+15:58:29.183 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId, templateId, temperature]
+15:58:29.207 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+15:58:29.207 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+15:58:29.207 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+15:58:29.215 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=Demo question=hola
+15:58:29.216 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=Demo temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.217 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=Demo templateId=default
+15:58:29.217 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=Demo promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.217 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=Demo elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@394a6d2b
+15:58:29.222 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=demo question=hola
+15:58:29.222 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=demo temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.222 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=demo templateId=default
+15:58:29.222 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=demo promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.222 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=demo elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@635ff2a5
+15:58:29.241 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+15:58:29.241 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+15:58:29.242 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+15:58:29.251 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=demo question=hola
+15:58:29.251 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=demo temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.251 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=demo templateId=default
+15:58:29.251 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=demo elapsedMs=0 status=error response=com.example.chat.dto.ChatResponse@40dd552c
+15:58:29.272 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+15:58:29.273 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+15:58:29.273 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+15:58:29.282 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=null question=hola
+15:58:29.282 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=null temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.282 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=null templateId=default
+15:58:29.283 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=null promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.283 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=null elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@53bb71e5
+15:58:29.341 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+15:58:29.342 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+15:58:29.342 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+15:58:29.374 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=demo question=hola
+15:58:29.375 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=demo temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.375 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=demo templateId=default
+15:58:29.375 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=demo promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.375 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=demo elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@4264beb8
+15:58:29.401 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+15:58:29.401 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+15:58:29.401 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+15:58:29.410 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.447 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+15:58:29.448 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+15:58:29.450 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms
+15:58:29.465 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=null question=hola
+15:58:29.466 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=null temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.466 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=null templateId=default
+15:58:29.466 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=null promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.466 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=null elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@5a3cf824
+15:58:29.474 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=null question=hola
+15:58:29.475 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=null temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.475 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=null templateId=default
+15:58:29.475 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=null promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.475 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=null elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@28367da7
+15:58:29.496 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+15:58:29.496 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+15:58:29.497 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+15:58:29.510 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.516 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.522 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.526 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.530 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.534 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.538 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.543 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.547 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.551 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.555 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.560 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.582 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+15:58:29.582 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+15:58:29.582 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+15:58:29.591 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.601 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.619 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+15:58:29.619 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+15:58:29.619 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+15:58:29.634 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=demo question=hola
+15:58:29.635 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=demo temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.636 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=demo templateId=default
+15:58:29.636 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=demo promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.636 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=demo elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@655203e3
+15:58:29.657 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+15:58:29.658 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+15:58:29.658 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+15:58:29.669 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[question]
+15:58:29.684 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+15:58:29.684 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+15:58:29.684 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+15:58:29.694 [Test worker] WARN com.example.chat.ChatController -- Validation failed for chat request: fields=[sessionId]
+15:58:29.721 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+15:58:29.722 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+15:58:29.722 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+15:58:29.738 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=demo question=hola
+15:58:29.738 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=demo temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.738 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=demo templateId=default
+15:58:29.738 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=demo promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.739 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=demo elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@7b211077
+15:58:29.747 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=Demo question=hola
+15:58:29.748 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=Demo temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.748 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=Demo templateId=default
+15:58:29.748 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=Demo promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.748 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=Demo elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@3b770d07
+15:58:29.750 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=a-b_c question=hola
+15:58:29.751 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=a-b_c temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.751 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=a-b_c templateId=default
+15:58:29.751 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=a-b_c promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.751 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=a-b_c elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@62b0bf85
+15:58:29.753 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa question=hola
+15:58:29.753 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.753 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa templateId=default
+15:58:29.753 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.753 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@1fcaea93
+15:58:29.757 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=b41065fb-688c-475a-9b26-188f3a15d4a2 question=hola
+15:58:29.757 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=b41065fb-688c-475a-9b26-188f3a15d4a2 temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.758 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=b41065fb-688c-475a-9b26-188f3a15d4a2 templateId=default
+15:58:29.758 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=b41065fb-688c-475a-9b26-188f3a15d4a2 promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.758 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=b41065fb-688c-475a-9b26-188f3a15d4a2 elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@6c9bf3b5
+15:58:29.762 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=X question=hola
+15:58:29.762 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=X temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.762 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=X templateId=default
+15:58:29.762 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=X promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.762 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=X elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@6f07d414
+15:58:29.765 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=_ question=hola
+15:58:29.765 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=_ temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.765 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=_ templateId=default
+15:58:29.765 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=_ promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.765 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=_ elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@8ac12e6
+15:58:29.768 [Test worker] INFO com.example.chat.ChatController -- Received chat request sessionId=- question=hola
+15:58:29.769 [Test worker] INFO com.example.chat.ChatController -- Chat settings sessionId=- temperature=null topP=null topK=null numPredict=null seed=null
+15:58:29.769 [Test worker] INFO com.example.chat.ChatController -- Chat template sessionId=- templateId=default
+15:58:29.769 [Test worker] INFO com.example.chat.ChatController -- Chat usage sessionId=- promptTokens=40 completionTokens=10 totalTokens=50 model=llama3.2:3b finishReason=stop tokensPerSecond=13.7
+15:58:29.769 [Test worker] INFO com.example.chat.ChatController -- Chat response for sessionId=- elapsedMs=0 status=ok response=com.example.chat.dto.ChatResponse@40faff12
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

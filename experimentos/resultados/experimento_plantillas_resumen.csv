@@ -1,0 +1,7 @@
+﻿"parte","templateId","ejecuciones_validas","promptTokens_media","dif_vs_mas_corta","completionTokens_media","elapsedMs_media","truncadas","reduccion_pct_vs_tutor","cumple_30pct"
+"1","default","3","73","0",,,,,
+"1","concise","3","91","18",,,,,
+"1","tutor","3","110","37",,,,,
+"1","extractor","3","130","57",,,,,
+"2","concise","20",,,"52.2","4823.2","0","79.5","True"
+"2","tutor","20",,,"255.1","23842.15","0",,

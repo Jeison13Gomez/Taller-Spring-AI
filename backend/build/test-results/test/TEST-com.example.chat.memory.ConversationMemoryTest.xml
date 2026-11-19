@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.chat.memory.ConversationMemoryTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-28T20:58:31.757Z" hostname="ALEJIWIRIKS" time="0.036">
+  <properties/>
+  <testcase name="turnsOfDifferentSessionsRunAtTheSameTime()" classname="com.example.chat.memory.ConversationMemoryTest" time="0.005"/>
+  <testcase name="noLockIsLeftBehindAfterTheTurnsFinishNorAfterAFailure()" classname="com.example.chat.memory.ConversationMemoryTest" time="0.001"/>
+  <testcase name="whenTheActionThrowsTheHistoryIsRestoredAndTheExceptionPropagates()" classname="com.example.chat.memory.ConversationMemoryTest" time="0.001"/>
+  <testcase name="aSuccessfulTurnIsKept()" classname="com.example.chat.memory.ConversationMemoryTest" time="0.002"/>
+  <testcase name="turnsOfTheSameSessionNeverOverlap()" classname="com.example.chat.memory.ConversationMemoryTest" time="0.005"/>
+  <testcase name="aNullAnswerRestoresTheHistory()" classname="com.example.chat.memory.ConversationMemoryTest" time="0.002"/>
+  <testcase name="aBlankFirstTurnLeavesNoSessionBehind()" classname="com.example.chat.memory.ConversationMemoryTest" time="0.002"/>
+  <testcase name="theActionGetsTheMemoryAdvisorAndTheHistorySizeZeroForANewSession()" classname="com.example.chat.memory.ConversationMemoryTest" time="0.003"/>
+  <testcase name="theResultOfAFailedBlankTurnStillCarriesTheHistorySize()" classname="com.example.chat.memory.ConversationMemoryTest" time="0.001"/>
+  <testcase name="aSessionThatDidNotExistStaysAbsentAfterAFailedFirstTurn()" classname="com.example.chat.memory.ConversationMemoryTest" time="0.001"/>
+  <testcase name="aBlankAnswerRestoresTheHistory()" classname="com.example.chat.memory.ConversationMemoryTest" time="0.0"/>
+  <testcase name="twoHundredConcurrentTurnsOfOneSessionKeepEveryMessageInOrder()" classname="com.example.chat.memory.ConversationMemoryTest" time="0.007"/>
+  <testcase name="theHistorySizeIsTheNumberOfStoredMessagesAndIsReturnedInTheResult()" classname="com.example.chat.memory.ConversationMemoryTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

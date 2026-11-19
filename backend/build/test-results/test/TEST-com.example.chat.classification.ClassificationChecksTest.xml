@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.chat.classification.ClassificationChecksTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-28T20:58:30.709Z" hostname="ALEJIWIRIKS" time="0.176">
+  <properties/>
+  <testcase name="aMissingOrBlankJustificationFails()" classname="com.example.chat.classification.ClassificationChecksTest" time="0.006"/>
+  <testcase name="aMissingCategoryFails()" classname="com.example.chat.classification.ClassificationChecksTest" time="0.0"/>
+  <testcase name="aFieldWithTheWrongKindOfValueMapsToThatField()" classname="com.example.chat.classification.ClassificationChecksTest" time="0.012"/>
+  <testcase name="textThatIsNotJsonOrIsEmptyMapsToJson()" classname="com.example.chat.classification.ClassificationChecksTest" time="0.001"/>
+  <testcase name="aConfidenceThatIsNotANumberMapsToConfidence()" classname="com.example.chat.classification.ClassificationChecksTest" time="0.0"/>
+  <testcase name="aMissingOrOutOfRangeConfidenceFails()" classname="com.example.chat.classification.ClassificationChecksTest" time="0.001"/>
+  <testcase name="theFirstFailedCheckIsReportedInFieldOrder()" classname="com.example.chat.classification.ClassificationChecksTest" time="0.0"/>
+  <testcase name="aCategoryOutsideTheSetOrWithOtherCaseMapsToCategory()" classname="com.example.chat.classification.ClassificationChecksTest" time="0.001"/>
+  <testcase name="aNullAnswerMapsToJson()" classname="com.example.chat.classification.ClassificationChecksTest" time="0.001"/>
+  <testcase name="aValidClassificationPasses()" classname="com.example.chat.classification.ClassificationChecksTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

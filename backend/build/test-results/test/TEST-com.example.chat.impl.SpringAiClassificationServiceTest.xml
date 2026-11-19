@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.chat.impl.SpringAiClassificationServiceTest" tests="25" skipped="0" failures="0" errors="0" timestamp="2026-10-28T20:58:30.892Z" hostname="ALEJIWIRIKS" time="0.36">
+  <properties/>
+  <testcase name="theTemperatureIsAppliedInEveryStrategy()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.032"/>
+  <testcase name="nativeSchemaStillRejectsAnInvalidAnswerAfterOneCall()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.007"/>
+  <testcase name="theTemperatureReachesTheModelAndZeroIsAValue()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.017"/>
+  <testcase name="aValidAnswerGivesTheResultWithOneAttemptAndNoRetry()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.005"/>
+  <testcase name="aClassificationAfterChatTurnsInASessionSendsOnlySystemAndUserAndStoresNothing()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.01"/>
+  <testcase name="validateRetryWithAValidFirstAnswerDoesNotRetry()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.006"/>
+  <testcase name="thePromptCarriesTheClassificationInstructionsTheTextAndTheFormat()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.01"/>
+  <testcase name="aFailureOfTheModelOnARetryPropagatesAndIsNotAFormatFailure()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.006"/>
+  <testcase name="aFailureOfTheModelItselfIsNotAFormatFailure()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.006"/>
+  <testcase name="theClassificationServiceHasNoWayToReceiveTheConversationMemory()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.001"/>
+  <testcase name="theOtherStrategiesDoNotSetAnOutputSchema()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.012"/>
+  <testcase name="theUserMessageIsTheTextThenOneLineFeedThenTheFormatWithNoPlatformSeparators()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.004"/>
+  <testcase name="instructionWithAnInvalidAnswerMakesOneCallOnly()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.005"/>
+  <testcase name="validateRetryRetriesOnceAndSumsTheUsageOfBothAttempts()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.005"/>
+  <testcase name="anAnswerThatBreaksAFieldRuleIsAFormatFailureNamingTheField()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.006"/>
+  <testcase name="anInvalidAnswerFailsAfterExactlyOneModelCall()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.006"/>
+  <testcase name="theUsageIsTheUsageOfTheAttempt()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.008"/>
+  <testcase name="validateRetryGivesUpAfterThreeAttemptsAndNeverMakesAFourthCall()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.007"/>
+  <testcase name="theTextIsSentAsIsEvenWithBracesAndAngleBrackets()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.007"/>
+  <testcase name="nativeSchemaSendsTheSchemaInTheOptionsAndNoFormatInstruction()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.017"/>
+  <testcase name="aFailureOfTheModelPropagatesAsIsInEveryStrategy()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.01"/>
+  <testcase name="consumedIsTheSumOfTheFailedAttemptsAndElapsedIsNotNegative()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.073"/>
+  <testcase name="theRetryPromptNamesTheFailedCheckAndItsMessage()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.009"/>
+  <testcase name="eachBrokenAnswerFailsWithTheCheckThatItBreaks()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.076"/>
+  <testcase name="anAnswerInsideAJsonFenceIsAccepted()" classname="com.example.chat.impl.SpringAiClassificationServiceTest" time="0.005"/>
+  <system-out><![CDATA[15:58:30.905 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=instruction intentos=1 reintentos=0 elapsedMs=6
+15:58:30.912 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=validate-retry intentos=1 reintentos=0 elapsedMs=4
+15:58:30.923 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=native-schema intentos=1 reintentos=0 elapsedMs=10
+15:58:30.931 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=native-schema intentos=1 chequeo=category elapsedMs=4
+15:58:30.937 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=instruction intentos=1 reintentos=0 elapsedMs=4
+15:58:30.943 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=instruction intentos=1 reintentos=0 elapsedMs=4
+15:58:30.948 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=instruction intentos=1 reintentos=0 elapsedMs=3
+15:58:30.954 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=instruction intentos=1 reintentos=0 elapsedMs=3
+15:58:30.964 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=instruction intentos=1 reintentos=0 elapsedMs=4
+15:58:30.971 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=validate-retry intentos=1 reintentos=0 elapsedMs=4
+15:58:30.979 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=instruction intentos=1 reintentos=0 elapsedMs=5
+15:58:31.002 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=instruction intentos=1 reintentos=0 elapsedMs=4
+15:58:31.008 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=validate-retry intentos=1 reintentos=0 elapsedMs=4
+15:58:31.014 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=instruction intentos=1 reintentos=0 elapsedMs=2
+15:58:31.019 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=instruction intentos=1 chequeo=category elapsedMs=3
+15:58:31.024 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=validate-retry intentos=2 reintentos=1 elapsedMs=3
+15:58:31.029 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=instruction intentos=1 chequeo=confidence elapsedMs=3
+15:58:31.035 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=instruction intentos=1 chequeo=json elapsedMs=3
+15:58:31.045 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=instruction intentos=1 reintentos=0 elapsedMs=6
+15:58:31.052 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=validate-retry intentos=3 chequeo=category elapsedMs=4
+15:58:31.059 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=instruction intentos=1 reintentos=0 elapsedMs=4
+15:58:31.068 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=native-schema intentos=1 reintentos=0 elapsedMs=5
+15:58:31.094 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=validate-retry intentos=3 chequeo=json elapsedMs=2
+15:58:31.100 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=validate-retry intentos=3 chequeo=confidence elapsedMs=5
+15:58:31.109 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=validate-retry intentos=3 chequeo=json elapsedMs=7
+15:58:31.115 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=validate-retry intentos=3 chequeo=category elapsedMs=4
+15:58:31.121 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=validate-retry intentos=3 chequeo=confidence elapsedMs=4
+15:58:31.125 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=validate-retry intentos=3 chequeo=category elapsedMs=3
+15:58:31.132 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=validate-retry intentos=3 chequeo=justification elapsedMs=4
+15:58:31.143 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=validate-retry intentos=3 chequeo=justification elapsedMs=9
+15:58:31.148 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=validate-retry intentos=3 chequeo=confidence elapsedMs=4
+15:58:31.152 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=validate-retry intentos=3 chequeo=category elapsedMs=3
+15:58:31.157 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=validate-retry intentos=3 chequeo=justification elapsedMs=3
+15:58:31.160 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=validate-retry intentos=3 chequeo=json elapsedMs=2
+15:58:31.169 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=validate-retry intentos=2 reintentos=1 elapsedMs=6
+15:58:31.177 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=instruction intentos=1 chequeo=json elapsedMs=3
+15:58:31.183 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=instruction intentos=1 chequeo=confidence elapsedMs=4
+15:58:31.189 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=instruction intentos=1 chequeo=json elapsedMs=4
+15:58:31.199 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=instruction intentos=1 chequeo=category elapsedMs=8
+15:58:31.206 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=instruction intentos=1 chequeo=confidence elapsedMs=4
+15:58:31.212 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=instruction intentos=1 chequeo=category elapsedMs=5
+15:58:31.217 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=instruction intentos=1 chequeo=justification elapsedMs=3
+15:58:31.222 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=instruction intentos=1 chequeo=justification elapsedMs=3
+15:58:31.226 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=instruction intentos=1 chequeo=confidence elapsedMs=3
+15:58:31.234 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=instruction intentos=1 chequeo=category elapsedMs=6
+15:58:31.241 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=instruction intentos=1 chequeo=justification elapsedMs=5
+15:58:31.246 [Test worker] WARN com.example.chat.impl.SpringAiClassificationService -- Clasificacion fallida estrategia=instruction intentos=1 chequeo=json elapsedMs=3
+15:58:31.251 [Test worker] INFO com.example.chat.impl.SpringAiClassificationService -- Clasificacion estrategia=instruction intentos=1 reintentos=0 elapsedMs=3
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

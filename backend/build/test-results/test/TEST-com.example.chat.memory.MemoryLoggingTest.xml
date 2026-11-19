@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.chat.memory.MemoryLoggingTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-28T20:58:31.797Z" hostname="ALEJIWIRIKS" time="0.028">
+  <properties/>
+  <testcase name="noLogLineOfTheMemoryPathCarriesQuestionAnswerOrHistoryText()" classname="com.example.chat.memory.MemoryLoggingTest" time="0.025"/>
+  <testcase name="theSessionIdIsAbbreviatedInTheMemoryLogs()" classname="com.example.chat.memory.MemoryLoggingTest" time="0.002"/>
+  <system-out><![CDATA[15:58:31.802 [Test worker] DEBUG com.example.chat.impl.SpringAiModelService -- Enviando prompt al modelo. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx longitud=18 plantilla=default parametros=GenerationSettings[temperature=null, topP=null, topK=null, numPredict=null, seed=null]
+15:58:31.813 [Test worker] DEBUG com.example.chat.memory.ConversationMemory -- Turno de sesion. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxx… historyMessages=0
+15:58:31.814 [Test worker] DEBUG com.example.chat.impl.SpringAiModelService -- Respuesta recibida. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx longitud=19
+15:58:31.814 [Test worker] DEBUG com.example.chat.impl.SpringAiModelService -- Enviando prompt al modelo. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx longitud=18 plantilla=default parametros=GenerationSettings[temperature=null, topP=null, topK=null, numPredict=null, seed=null]
+15:58:31.815 [Test worker] DEBUG com.example.chat.memory.ConversationMemory -- Turno de sesion. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxx… historyMessages=2
+15:58:31.815 [Test worker] DEBUG com.example.chat.impl.SpringAiModelService -- Respuesta recibida. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx longitud=19
+15:58:31.815 [Test worker] DEBUG com.example.chat.impl.SpringAiModelService -- Enviando prompt al modelo. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx longitud=18 plantilla=default parametros=GenerationSettings[temperature=null, topP=null, topK=null, numPredict=null, seed=null]
+15:58:31.815 [Test worker] DEBUG com.example.chat.memory.ConversationMemory -- Turno de sesion. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxx… historyMessages=4
+15:58:31.816 [Test worker] DEBUG com.example.chat.impl.SpringAiModelService -- Respuesta recibida. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx longitud=19
+15:58:31.817 [Test worker] DEBUG com.example.chat.impl.SpringAiModelService -- Enviando prompt al modelo. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx longitud=18 plantilla=default parametros=GenerationSettings[temperature=null, topP=null, topK=null, numPredict=null, seed=null]
+15:58:31.817 [Test worker] DEBUG com.example.chat.memory.ConversationMemory -- Turno de sesion. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxx… historyMessages=6
+15:58:31.818 [Test worker] DEBUG com.example.chat.memory.ConversationMemory -- Historial restaurado tras un fallo del turno. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxx…
+15:58:31.818 [Test worker] DEBUG com.example.chat.impl.SpringAiModelService -- Enviando prompt al modelo. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx longitud=18 plantilla=default parametros=GenerationSettings[temperature=null, topP=null, topK=null, numPredict=null, seed=null]
+15:58:31.818 [Test worker] DEBUG com.example.chat.memory.ConversationMemory -- Turno de sesion. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxx… historyMessages=0
+15:58:31.819 [Test worker] DEBUG com.example.chat.impl.SpringAiModelService -- Respuesta recibida. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx longitud=19
+15:58:31.819 [Test worker] DEBUG com.example.chat.impl.SpringAiModelService -- Enviando prompt al modelo. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx longitud=18 plantilla=default parametros=GenerationSettings[temperature=null, topP=null, topK=null, numPredict=null, seed=null]
+15:58:31.819 [Test worker] DEBUG com.example.chat.memory.ConversationMemory -- Turno de sesion. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxx… historyMessages=2
+15:58:31.819 [Test worker] WARN com.example.chat.impl.SpringAiModelService -- El modelo devolvio una respuesta vacia. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+15:58:31.819 [Test worker] DEBUG com.example.chat.memory.ConversationMemory -- Historial restaurado tras una respuesta en blanco. sessionId=sesion-larga-xxxxxxxxxxxxxxxxxxxxxxxxxxx…
+15:58:31.824 [Test worker] DEBUG com.example.chat.memory.ConversationMemory -- Turno de sesion. sessionId=yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy… historyMessages=0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

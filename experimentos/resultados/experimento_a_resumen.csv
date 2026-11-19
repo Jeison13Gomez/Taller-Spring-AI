@@ -1,0 +1,5 @@
+﻿"temperature","ejecuciones_validas","respuestas_unicas","completionTokens_media","completionTokens_desv","elapsedMs_media"
+"0.0","10","1","4","0","359.3"
+"0.3","10","7","4.9","1.29","392.5"
+"0.7","10","10","4.2","0.92","360.5"
+"1.0","10","9","5.1","1.29","413.8"
