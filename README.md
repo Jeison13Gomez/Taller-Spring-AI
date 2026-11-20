@@ -315,7 +315,7 @@ gradle -I gradle/planeador-tests.gradle cleanTest test
 El script selecciona las pruebas del planeador y su modelo simulado. El comando general
 `gradle test` sigue bloqueado por tests anteriores del chat que no fueron adaptados al
 constructor RAG con `VectorStore`. Los resultados y las trazas están en `docs/resultados-parte5-corregida-final.md`
-y `docs/trazas/`. La bitácora académica se entrega por separado, fuera de este repositorio.
+y `docs/trazas/`. La [bitácora académica en PDF](docs/bitacora-agentes.pdf) está en `docs/`, en la rama `taller-agentes`.
 
 ### Diferencias deliberadas respecto al ejemplo del PDF
 
