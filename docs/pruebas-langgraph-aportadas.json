@@ -1,0 +1,180 @@
+{
+  "origen": "Transcripción de imagen aportada por el usuario; no se ejecutó LangGraph en este entorno.",
+  "fuente": "capturas/langgraph-resultados-aportados.png",
+  "criterioVersionFinal": "Se usa V2 para las preguntas 4 y 6; las V1 se conservan como intentos anteriores.",
+  "modeloExacto": null,
+  "hardware": null,
+  "repositorio": "https://github.com/JuanDProg123/TallerLangGraph.git",
+  "intentos": [
+    {
+      "pregunta": 1,
+      "version": 1,
+      "agentes": [
+        "CLIMA"
+      ],
+      "evaluacion": "Correcta",
+      "tiempoSegundos": 23.97,
+      "observaciones": "No hay observaciones"
+    },
+    {
+      "pregunta": 2,
+      "version": 1,
+      "agentes": [
+        "PRESUPUESTO"
+      ],
+      "evaluacion": "Correcta",
+      "tiempoSegundos": 24.3,
+      "observaciones": "No hay observaciones"
+    },
+    {
+      "pregunta": 3,
+      "version": 1,
+      "agentes": [
+        "CLIMA",
+        "PRESUPUESTO"
+      ],
+      "evaluacion": "Parcial",
+      "tiempoSegundos": 39.44,
+      "observaciones": "Correcta al principio, pero se generó información innecesaria al final"
+    },
+    {
+      "pregunta": 4,
+      "version": 1,
+      "agentes": [
+        "PRESUPUESTO"
+      ],
+      "evaluacion": "Incorrecta",
+      "tiempoSegundos": 33.98,
+      "observaciones": "Qwen decidió terminar después de solo consultar el agente de presupuesto"
+    },
+    {
+      "pregunta": 4,
+      "version": 2,
+      "agentes": [
+        "CLIMA",
+        "PRESUPUESTO",
+        "RESERVAS"
+      ],
+      "evaluacion": "Correcta",
+      "tiempoSegundos": 36.7,
+      "observaciones": "No hay observaciones"
+    },
+    {
+      "pregunta": 5,
+      "version": 1,
+      "agentes": [
+        "PRESUPUESTO",
+        "CLIMA"
+      ],
+      "evaluacion": "Correcta",
+      "tiempoSegundos": 36.34,
+      "observaciones": "No hay observaciones"
+    },
+    {
+      "pregunta": 6,
+      "version": 1,
+      "agentes": [
+        "CLIMA"
+      ],
+      "evaluacion": "Incorrecta",
+      "tiempoSegundos": 14.7,
+      "observaciones": "Se consultó a un agente cuando se esperaba que no lo hiciera; además inventó una respuesta"
+    },
+    {
+      "pregunta": 6,
+      "version": 2,
+      "agentes": [],
+      "evaluacion": "Correcta",
+      "tiempoSegundos": 18.19,
+      "observaciones": "No hay observaciones"
+    }
+  ],
+  "resultadosFinales": [
+    {
+      "pregunta": 1,
+      "version": 1,
+      "agentes": [
+        "CLIMA"
+      ],
+      "evaluacion": "Correcta",
+      "tiempoSegundos": 23.97,
+      "observaciones": "No hay observaciones"
+    },
+    {
+      "pregunta": 2,
+      "version": 1,
+      "agentes": [
+        "PRESUPUESTO"
+      ],
+      "evaluacion": "Correcta",
+      "tiempoSegundos": 24.3,
+      "observaciones": "No hay observaciones"
+    },
+    {
+      "pregunta": 3,
+      "version": 1,
+      "agentes": [
+        "CLIMA",
+        "PRESUPUESTO"
+      ],
+      "evaluacion": "Parcial",
+      "tiempoSegundos": 39.44,
+      "observaciones": "Correcta al principio, pero se generó información innecesaria al final"
+    },
+    {
+      "pregunta": 4,
+      "version": 2,
+      "agentes": [
+        "CLIMA",
+        "PRESUPUESTO",
+        "RESERVAS"
+      ],
+      "evaluacion": "Correcta",
+      "tiempoSegundos": 36.7,
+      "observaciones": "No hay observaciones"
+    },
+    {
+      "pregunta": 5,
+      "version": 1,
+      "agentes": [
+        "PRESUPUESTO",
+        "CLIMA"
+      ],
+      "evaluacion": "Correcta",
+      "tiempoSegundos": 36.34,
+      "observaciones": "No hay observaciones"
+    },
+    {
+      "pregunta": 6,
+      "version": 2,
+      "agentes": [],
+      "evaluacion": "Correcta",
+      "tiempoSegundos": 18.19,
+      "observaciones": "No hay observaciones"
+    }
+  ],
+  "resumenFinal": {
+    "correctas": 5,
+    "parciales": 1,
+    "incorrectas": 0,
+    "tiempoPromedioSegundos": 29.823
+  },
+  "resumenPrimerIntento": {
+    "correctas": 3,
+    "parciales": 1,
+    "incorrectas": 2,
+    "tiempoPromedioSegundos": 28.788
+  },
+  "revisionRevisada": "d9fc39fa6cd9fb8afdda8c3505a0fd82991bbb2e",
+  "configuracionEnCodigo": {
+    "modeloPorDefecto": "qwen2.5:3b",
+    "temperatura": 0,
+    "modeloPuedeCambiarCon": "MODELO_OLLAMA",
+    "rangosDeclarados": {
+      "langgraph": ">=1.0,<2",
+      "langchain": ">=1.0,<2",
+      "langchain-ollama": ">=1.0,<2"
+    }
+  },
+  "notaRevision": "El código se revisó estáticamente. No se confirmó que esta revisión o los valores por defecto originaran los tiempos de la tabla."
+}

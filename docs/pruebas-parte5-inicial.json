@@ -1,0 +1,207 @@
+{
+  "fecha": "2026-11-19T18:49:40.835295+00:00",
+  "modelo": "qwen2.5:3b",
+  "ejecucion": "inicial",
+  "pruebas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Cómo estará el clima en Guatavita el domingo?",
+      "esperado": "CLIMA; lluvioso, 7–15 °C, 80 % de lluvia.",
+      "inicioUtc": "2026-11-19T18:49:40.835600+00:00",
+      "httpStatus": 200,
+      "respuesta": {
+        "requestId": "436d362f-daf3-4ec5-9deb-a119c409bca4",
+        "answer": "El domingo en Guatavita será lluvioso. La temperatura mínima será de 7°C y la máxima de 15°C. La probabilidad de lluvia es del 80%. Recomiendo llevar ropa de abrigo y un impermeable.",
+        "elapsedMs": 33565,
+        "status": "ok",
+        "usage": null,
+        "historyMessages": 0,
+        "sources": []
+      },
+      "tiempoSegundos": 33.643,
+      "decisionesSupervisor": [
+        "CLIMA",
+        "CLIMA"
+      ],
+      "especialistasEjecutados": [
+        "CLIMA"
+      ],
+      "toolsEjecutadas": [
+        "consultarPronostico"
+      ],
+      "traza": "trazas/parte5-inicial/pregunta-1.log",
+      "evaluacion": "Correcta",
+      "observaciones": "Clima completo y verificado. El supervisor repite CLIMA, pero Java evita ejecutar el especialista dos veces."
+    },
+    {
+      "numero": 2,
+      "pregunta": "Somos 4 amigos con 350000 pesos. ¿Nos alcanza para ir a Zipaquirá?",
+      "esperado": "PRESUPUESTO; costo $400.000, faltan $50.000.",
+      "inicioUtc": "2026-11-19T18:50:14.622774+00:00",
+      "httpStatus": 200,
+      "respuesta": {
+        "requestId": "4ac46d21-2954-443a-93fc-22eefa5a34c3",
+        "answer": "No hay resultados específicos para Guatavita, Zipaquirá, Villa de Leyva, Suesca y Chicaque. Para saber si alcanza el presupuesto, necesitaría conocer los precios de las opciones disponibles. Podemos ayudarte con clima, presupuesto y reservas.",
+        "elapsedMs": 23162,
+        "status": "ok",
+        "usage": null,
+        "historyMessages": 0,
+        "sources": []
+      },
+      "tiempoSegundos": 23.161,
+      "decisionesSupervisor": [
+        "RESERVAS",
+        "CLIMA",
+        "RESERVAS"
+      ],
+      "especialistasEjecutados": [
+        "RESERVAS",
+        "CLIMA"
+      ],
+      "toolsEjecutadas": [
+        "consultarDisponibilidad",
+        "consultarPronostico"
+      ],
+      "traza": "trazas/parte5-inicial/pregunta-2.log",
+      "evaluacion": "Incorrecta",
+      "observaciones": "No llama PRESUPUESTO; consulta reservas y clima y omite costo y saldo."
+    },
+    {
+      "numero": 3,
+      "pregunta": "Somos 2 y queremos ir a Villa de Leyva el sábado. ¿Cómo estará el clima y cuánto nos cuesta?",
+      "esperado": "CLIMA y PRESUPUESTO; soleado, 5 % de lluvia, costo $230.000.",
+      "inicioUtc": "2026-11-19T18:50:37.905209+00:00",
+      "httpStatus": 200,
+      "respuesta": {
+        "requestId": "9a78e9fc-da60-4ba9-9406-f509c153f8d9",
+        "answer": "El clima para Villa de Leyva el sábado es soleado con temperaturas entre 12°C y 25°C. El costo total para 2 personas es $230.000. Podemos reservar para ti.",
+        "elapsedMs": 41377,
+        "status": "ok",
+        "usage": null,
+        "historyMessages": 0,
+        "sources": []
+      },
+      "tiempoSegundos": 41.392,
+      "decisionesSupervisor": [
+        "PRESUPUESTO",
+        "RESERVAS",
+        "CLIMA"
+      ],
+      "especialistasEjecutados": [
+        "PRESUPUESTO",
+        "RESERVAS",
+        "CLIMA"
+      ],
+      "toolsEjecutadas": [
+        "estimarCosto",
+        "consultarDisponibilidad",
+        "consultarPronostico"
+      ],
+      "traza": "trazas/parte5-inicial/pregunta-3.log",
+      "evaluacion": "Parcial",
+      "observaciones": "Clima soleado y costo $230.000 correctos; omite 5 % de lluvia y llama RESERVAS sin necesidad."
+    },
+    {
+      "numero": 4,
+      "pregunta": "Somos 3 y tenemos 250000. Si no llueve mucho y nos alcanza, reserva Suesca para el sábado a nombre de Laura.",
+      "esperado": "CLIMA, PRESUPUESTO y RESERVAS; lluvia 15 %, costo $210.000, sobran $40.000; reserva para 3, sábado, Laura.",
+      "inicioUtc": "2026-11-19T18:51:19.461089+00:00",
+      "httpStatus": 200,
+      "respuesta": {
+        "requestId": "930aceef-e0c1-4908-9848-fb43fd3a2e37",
+        "answer": "Lo siento Laura, no se puede hacer la reserva para Suesca el sábado. El clima no cumple con la condición de poco o ningún tiempo lluvioso. Tu presupuesto de 250,000 es adecuado para esta zona. Podemos intentar otras opciones dentro de tu presupuesto.",
+        "elapsedMs": 41395,
+        "status": "ok",
+        "usage": null,
+        "historyMessages": 0,
+        "sources": []
+      },
+      "tiempoSegundos": 41.447,
+      "decisionesSupervisor": [
+        "CLIMA",
+        "RESERVAS",
+        "RESERVAS"
+      ],
+      "especialistasEjecutados": [
+        "CLIMA",
+        "RESERVAS"
+      ],
+      "toolsEjecutadas": [
+        "consultarPronostico",
+        "consultarDisponibilidad"
+      ],
+      "traza": "trazas/parte5-inicial/pregunta-4.log",
+      "evaluacion": "Incorrecta",
+      "observaciones": "Omite PRESUPUESTO y rechaza la reserva por clima a pesar del 15 % de lluvia. Afirma suficiencia de dinero sin cálculo."
+    },
+    {
+      "numero": 5,
+      "pregunta": "Somos 3 con 150000. Si nos alcanza, reserva Suesca el domingo a nombre de Laura.",
+      "esperado": "PRESUPUESTO (RESERVAS opcional); faltan $60.000; NO crear reserva.",
+      "inicioUtc": "2026-11-19T18:52:01.050959+00:00",
+      "httpStatus": 200,
+      "respuesta": {
+        "requestId": "1d6ed3b0-5e76-40f7-9891-472dac70d4c6",
+        "answer": "Tu reserva para Suesca el domingo está confirmada con el código RES-001.",
+        "elapsedMs": 44141,
+        "status": "ok",
+        "usage": null,
+        "historyMessages": 0,
+        "sources": []
+      },
+      "tiempoSegundos": 44.145,
+      "decisionesSupervisor": [
+        "CLIMA",
+        "RESERVAS",
+        "CLIMA"
+      ],
+      "especialistasEjecutados": [
+        "CLIMA",
+        "RESERVAS"
+      ],
+      "toolsEjecutadas": [
+        "consultarPronostico",
+        "consultarDisponibilidad",
+        "crearReserva"
+      ],
+      "traza": "trazas/parte5-inicial/pregunta-5.log",
+      "evaluacion": "Incorrecta",
+      "observaciones": "Omite PRESUPUESTO y ejecuta crearReserva(Suesca, domingo, 3, Laura). Crea RES-001 con presupuesto insuficiente; debió indicar que faltan $60.000."
+    },
+    {
+      "numero": 6,
+      "pregunta": "¿Quién ganó el mundial de 2022?",
+      "esperado": "Ningún especialista; explicar el alcance del planeador sin responder la pregunta deportiva.",
+      "inicioUtc": "2026-11-19T18:52:45.353825+00:00",
+      "httpStatus": 200,
+      "respuesta": {
+        "requestId": "208c359e-1991-4459-8429-018c8eace87a",
+        "answer": "No hay información relevante sobre el resultado del Mundial de 2022 en los resultados de otros agentes.",
+        "elapsedMs": 22015,
+        "status": "ok",
+        "usage": null,
+        "historyMessages": 0,
+        "sources": []
+      },
+      "tiempoSegundos": 22.052,
+      "decisionesSupervisor": [
+        "RESERVAS",
+        "FIN"
+      ],
+      "especialistasEjecutados": [
+        "RESERVAS"
+      ],
+      "toolsEjecutadas": [],
+      "traza": "trazas/parte5-inicial/pregunta-6.log",
+      "evaluacion": "Incorrecta",
+      "observaciones": "No inventa el ganador, pero llama RESERVAS innecesariamente y no explica claramente el alcance del planeador."
+    }
+  ],
+  "resumen": {
+    "correctas": 1,
+    "parciales": 1,
+    "incorrectas": 4,
+    "tiempoPromedioSegundos": 34.307,
+    "reservaIndebidaSimulada": "RES-001, Suesca, domingo, 3 personas, Laura"
+  }
+}

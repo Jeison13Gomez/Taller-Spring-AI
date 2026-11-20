@@ -1,0 +1,68 @@
+{
+  "fecha": "2026-11-19T19:07:16.307306+00:00",
+  "modelo": "qwen2.5:3b",
+  "ejecucion": "corregida",
+  "pruebas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Cómo estará el clima en Guatavita el domingo?",
+      "esperado": "CLIMA; lluvioso, 7–15 °C, 80 % de lluvia.",
+      "inicioUtc": "2026-11-19T19:07:16.307559+00:00",
+      "httpStatus": 500,
+      "error": "{\"requestId\":null,\"answer\":\"\",\"elapsedMs\":0,\"status\":\"error\",\"usage\":null}",
+      "tiempoSegundos": 0.231,
+      "decisionesSupervisor": [],
+      "especialistasEjecutados": [],
+      "toolsEjecutadas": [],
+      "traza": "trazas/parte5-corregida/pregunta-1.log"
+    },
+    {
+      "numero": 2,
+      "pregunta": "Somos 4 amigos con 350000 pesos. ¿Nos alcanza para ir a Zipaquirá?",
+      "esperado": "PRESUPUESTO; costo $400.000, faltan $50.000.",
+      "inicioUtc": "2026-11-19T19:07:16.619920+00:00",
+      "httpStatus": 500,
+      "error": "{\"requestId\":null,\"answer\":\"\",\"elapsedMs\":0,\"status\":\"error\",\"usage\":null}",
+      "tiempoSegundos": 0.007,
+      "decisionesSupervisor": [],
+      "especialistasEjecutados": [],
+      "toolsEjecutadas": [],
+      "traza": "trazas/parte5-corregida/pregunta-2.log"
+    },
+    {
+      "numero": 3,
+      "pregunta": "Somos 2 y queremos ir a Villa de Leyva el sábado. ¿Cómo estará el clima y cuánto nos cuesta?",
+      "esperado": "CLIMA y PRESUPUESTO; soleado, 5 % de lluvia, costo $230.000.",
+      "inicioUtc": "2026-11-19T19:07:16.646947+00:00",
+      "httpStatus": 500,
+      "error": "{\"requestId\":null,\"answer\":\"\",\"elapsedMs\":0,\"status\":\"error\",\"usage\":null}",
+      "tiempoSegundos": 0.005,
+      "decisionesSupervisor": [],
+      "especialistasEjecutados": [],
+      "toolsEjecutadas": [],
+      "traza": "trazas/parte5-corregida/pregunta-3.log"
+    },
+    {
+      "numero": 4,
+      "pregunta": "Somos 3 y tenemos 250000. Si no llueve mucho y nos alcanza, reserva Suesca para el sábado a nombre de Laura.",
+      "esperado": "CLIMA, PRESUPUESTO y RESERVAS; lluvia 15 %, costo $210.000, sobran $40.000; reserva para 3, sábado, Laura.",
+      "inicioUtc": "2026-11-19T19:07:16.670774+00:00",
+      "error": "Remote end closed connection without response",
+      "tiempoSegundos": 201.77,
+      "decisionesSupervisor": [
+        "PRESUPUESTO",
+        "CLIMA"
+      ],
+      "especialistasEjecutados": [
+        "PRESUPUESTO",
+        "CLIMA"
+      ],
+      "toolsEjecutadas": [
+        "estimarCosto",
+        "calcularSaldo",
+        "consultarPronostico"
+      ],
+      "traza": "trazas/parte5-corregida/pregunta-4.log"
+    }
+  ]
+}

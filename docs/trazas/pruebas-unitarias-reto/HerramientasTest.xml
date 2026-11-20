@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.chat.planeador.HerramientasTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-11-19T21:08:41.403Z" hostname="441124594dd1" time="0.245">
+  <properties/>
+  <testcase name="presupuestoValidaPersonasYMontos()" classname="com.example.chat.planeador.HerramientasTest" time="0.001"/>
+  <testcase name="reservaRechazaCantidadesNoPositivasSinCambiarCupos()" classname="com.example.chat.planeador.HerramientasTest" time="0.002"/>
+  <testcase name="noReservaSinCupos()" classname="com.example.chat.planeador.HerramientasTest" time="0.001"/>
+  <testcase name="reservaValidaDescuentaCuposYGeneraCodigo()" classname="com.example.chat.planeador.HerramientasTest" time="0.001"/>
+  <testcase name="saldoNegativoDiceCuantoFalta()" classname="com.example.chat.planeador.HerramientasTest" time="0.0"/>
+  <testcase name="reservasConcurrentesNoVendenMasCuposDeLosDisponibles()" classname="com.example.chat.planeador.HerramientasTest" time="0.228"/>
+  <testcase name="pronosticoAceptaTildesYMayusculas()" classname="com.example.chat.planeador.HerramientasTest" time="0.001"/>
+  <testcase name="destinoDesconocidoListaLosValidos()" classname="com.example.chat.planeador.HerramientasTest" time="0.001"/>
+  <testcase name="saldoDelAgenteObtieneElCostoRealDelDestino()" classname="com.example.chat.planeador.HerramientasTest" time="0.002"/>
+  <testcase name="costoDeZipaquiraParaCuatro()" classname="com.example.chat.planeador.HerramientasTest" time="0.001"/>
+  <testcase name="reservaRechazaResponsableVacioYDiaInvalido()" classname="com.example.chat.planeador.HerramientasTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

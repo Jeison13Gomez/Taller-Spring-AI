@@ -25,7 +25,7 @@ services:
     container_name: pruebachat_ollama_pull
     environment:
       - OLLAMA_HOST=http://ollama:11434
-    command: ["pull", "llama3.2:3b"]
+    command: ["pull", "qwen2.5:3b"]
     restart: "no"
     depends_on:
       ollama:
@@ -51,8 +51,7 @@ services:
       - POSTGRES_DB=ragdb
       - POSTGRES_USER=rag
       - POSTGRES_PASSWORD=rag
-    ports:
-      - "5432:5432"
+    # El backend accede a pgvector:5432 por la red interna de Docker.
     volumes:
       - pgvector_data:/var/lib/postgresql/data
     healthcheck:

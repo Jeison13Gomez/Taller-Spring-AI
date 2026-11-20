@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.chat.planeador.ReglasReservaTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-11-19T19:12:47.808Z" hostname="9bda57778267" time="0.061">
+  <properties/>
+  <testcase name="alConfirmarNoPresentaComoActualesLosCuposAnteriores()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.002"/>
+  <testcase name="condicionDesconocidaJuntoAlPresupuestoNoSeDaPorCumplida()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.001"/>
+  <testcase name="preguntaDeDisponibilidadNoAutorizaUnaReserva()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.001"/>
+  <testcase name="seleccionaLosAgentesDeLasSeisPreguntas()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.001"/>
+  <testcase name="presupuestoYClimaAdecuadosPermitenLaReservaRealEnMemoria()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.001"/>
+  <testcase name="llamadasRepetidasEnUnaPeticionNoDescuentanDosVeces()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.001"/>
+  <testcase name="springInyectaElContextoFueraDelEsquemaQueVeElModelo()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.049"/>
+  <testcase name="climaPorEncimaDelUmbralBloqueaLaReserva()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.001"/>
+  <testcase name="formatosDePesosConSeparadoresSeReconocen()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.001"/>
+  <testcase name="sinContextoOriginalLaToolNoPuedeCrearReservas()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.0"/>
+  <testcase name="presupuestoInsuficienteBloqueaAunqueElModeloIntenteReservar()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.001"/>
+  <testcase name="argumentosDelModeloDebenCoincidirConLaSolicitudOriginal()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.001"/>
+  <testcase name="faltaDePresupuestoNoSeInterpretaComoCondicionCumplida()" classname="com.example.chat.planeador.ReglasReservaTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

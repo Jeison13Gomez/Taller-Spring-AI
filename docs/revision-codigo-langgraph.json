@@ -1,0 +1,80 @@
+{
+  "repositorio": "https://github.com/JuanDProg123/TallerLangGraph.git",
+  "revision": "d9fc39fa6cd9fb8afdda8c3505a0fd82991bbb2e",
+  "metodo": "Revisión estática y conteo de líneas físicas y no vacías, incluidos comentarios y prompts. Sin ejecutar LangGraph.",
+  "langgraph": {
+    "grafo.py": {
+      "lineasFisicas": 655,
+      "lineasNoVacias": 498,
+      "sha256": "164e1de8332d6ffddf66f067b967335877daa10978aff6fc153129651d50579a"
+    },
+    "agentes.py": {
+      "lineasFisicas": 96,
+      "lineasNoVacias": 73,
+      "sha256": "58349def715e437cdfa16f1e13f5e8e0bf9d8824c616fdde370cefc3a1b7f2a7"
+    },
+    "config.py": {
+      "lineasFisicas": 11,
+      "lineasNoVacias": 7,
+      "sha256": "88fd528840cbe15808727410abcc77576bc8d9bbdf8f2b3ba8567e7b74e2777b"
+    }
+  },
+  "spring": {
+    "planeador/Decision.java": {
+      "lineasFisicas": 14,
+      "lineasNoVacias": 12,
+      "sha256": "aaf31811df37cfae864a35d7b894d465d766c1fb467c57527dd06fb7a02842be"
+    },
+    "planeador/PlaneadorOrquestador.java": {
+      "lineasFisicas": 154,
+      "lineasNoVacias": 140,
+      "sha256": "46ff70822877b85494df0ef204cecd2f0381430c7c2a7173b923493aa5f93f33"
+    },
+    "planeador/agentes/AgentesConfig.java": {
+      "lineasFisicas": 127,
+      "lineasNoVacias": 114,
+      "sha256": "d657096cdef7bc54c7e08a7ecb0de436e4eecf3786d02ffc1f03f68c0df982aa"
+    },
+    "planeador/SolicitudPlaneador.java": {
+      "lineasFisicas": 61,
+      "lineasNoVacias": 55,
+      "sha256": "e8b850bcd99fb1bd75a9393995be77247c5f136835d33e251c1c142360f90561"
+    },
+    "planeador/RegistroHerramientas.java": {
+      "lineasFisicas": 37,
+      "lineasNoVacias": 32,
+      "sha256": "e25904c702b75826871a23265d04b994c8993f78a5f78e5fb508a9939c24fd82"
+    },
+    "planeador/ReglasReserva.java": {
+      "lineasFisicas": 49,
+      "lineasNoVacias": 46,
+      "sha256": "c274426f10b837122da91509fe9189069d55f83583e3b6e5f1a6d8eaa57f1e13"
+    }
+  },
+  "lineasFisicasLangGraph": 762,
+  "lineasFisicasSpring": 442,
+  "lineasNoVaciasLangGraph": 578,
+  "lineasNoVaciasSpring": 399,
+  "modeloLangGraphConfiguradoPorDefecto": "qwen2.5:3b",
+  "variableQuePuedeCambiarModelo": "MODELO_OLLAMA",
+  "temperaturaConfigurada": 0,
+  "rangosDeclarados": {
+    "langgraph": ">=1.0,<2",
+    "langchain": ">=1.0,<2",
+    "langchain-ollama": ">=1.0,<2"
+  },
+  "ejecucionTabuladaVinculadaAEstaRevision": false,
+  "referencias": {
+    "estado": "https://github.com/JuanDProg123/TallerLangGraph/blob/d9fc39fa6cd9fb8afdda8c3505a0fd82991bbb2e/planeador-langgraph/grafo.py#L30-L36",
+    "plan": "https://github.com/JuanDProg123/TallerLangGraph/blob/d9fc39fa6cd9fb8afdda8c3505a0fd82991bbb2e/planeador-langgraph/grafo.py#L126-L192",
+    "supervisor": "https://github.com/JuanDProg123/TallerLangGraph/blob/d9fc39fa6cd9fb8afdda8c3505a0fd82991bbb2e/planeador-langgraph/grafo.py#L276-L318",
+    "reglasReserva": "https://github.com/JuanDProg123/TallerLangGraph/blob/d9fc39fa6cd9fb8afdda8c3505a0fd82991bbb2e/planeador-langgraph/grafo.py#L369-L539",
+    "grafo": "https://github.com/JuanDProg123/TallerLangGraph/blob/d9fc39fa6cd9fb8afdda8c3505a0fd82991bbb2e/planeador-langgraph/grafo.py#L597-L630",
+    "agentes": "https://github.com/JuanDProg123/TallerLangGraph/blob/d9fc39fa6cd9fb8afdda8c3505a0fd82991bbb2e/planeador-langgraph/agentes.py",
+    "configuracion": "https://github.com/JuanDProg123/TallerLangGraph/blob/d9fc39fa6cd9fb8afdda8c3505a0fd82991bbb2e/planeador-langgraph/config.py",
+    "api": "https://github.com/JuanDProg123/TallerLangGraph/blob/d9fc39fa6cd9fb8afdda8c3505a0fd82991bbb2e/planeador-langgraph/api.py",
+    "pruebasReserva": "https://github.com/JuanDProg123/TallerLangGraph/blob/d9fc39fa6cd9fb8afdda8c3505a0fd82991bbb2e/planeador-langgraph/prueba4.py",
+    "pruebasFueraDominio": "https://github.com/JuanDProg123/TallerLangGraph/blob/d9fc39fa6cd9fb8afdda8c3505a0fd82991bbb2e/planeador-langgraph/prueba6.py"
+  },
+  "springEtapa": "Parte 6, antes del reto de actividades de la Parte 7"
+}
